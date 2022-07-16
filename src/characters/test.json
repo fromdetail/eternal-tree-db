@@ -1,0 +1,10 @@
+{
+  "tags": "characters",
+  "name": "Test",
+  "body": "Test",
+  "address": {
+    "street": "Test",
+    "city": "Test",
+    "post-code": "Test"
+  }
+}
