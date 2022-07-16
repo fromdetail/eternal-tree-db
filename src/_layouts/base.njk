@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {{title}}
+    </title>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css"/>
+  </head>
+  <body>
+    {{ content | safe }}
+    <script src="/assets/js/alpine.js"></script>
+  </body>
+</html>

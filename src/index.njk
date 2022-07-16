@@ -1,0 +1,39 @@
+---
+layout: base
+title: Neat Starter
+---
+
+<div x-data="listing" class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
+  <h1>
+    Welcome to
+    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+      {{title}}
+    </strong>
+  </h1>
+  <template x-for="character in characters" :key="character.name">
+    <p x-html="character.name"></p>
+  </template>
+
+  <button x-on:click="toggle">Click me please</button>
+  {%- for character in collections.characters -%}
+    <div>{{ character.data.name }}</div>
+  {%- endfor -%}
+
+   <script>
+    const characters = [
+      {%- for character in collections.characters -%}
+      { name: {{character.data.name | dump | safe }}},
+      {%- endfor -%}
+    ];
+     document.addEventListener('alpine:init', () => {
+        Alpine.data('listing', () => ({
+            open: false,
+            characters: characters,
+            toggle() {
+                this.open = ! this.open
+                this.characters = this.characters.reverse()
+            }
+        }))
+    })
+  </script>
+</div>
