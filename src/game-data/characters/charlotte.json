@@ -57,7 +57,7 @@
     },
     {
       "passive": {
-        "type": "Normal",
+        "type": "Synchro",
         "name": "Synchro passive english name",
         "description": "While afflicted by **Earth attack increase**, gain additional chase damage"
       }
