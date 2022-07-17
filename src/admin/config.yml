@@ -21,51 +21,124 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Avatar", name: "avatar", widget: "image"}
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Avatar", name: "avatar", widget: "image" }
+      - label: "Element"
+        name: "element"
+        widget: "select"
+        options: ["Fire", "Water", "Wind", "Earth", "Light", "Dark"]
+        default: "Fire"
+      - label: "Gacha Type"
+        name: "gacha"
+        widget: "select"
+        options: ["Permanent", "Limited", "Event"]
+        default: "Permanent"
+      - label: "Role"
+        name: "role"
+        widget: "select"
+        options: ["Attack", "Defense", "Special", "Support"]
+        default: "Attack"
+      - label: "Weapon type"
+        name: "weapon"
+        widget: "select"
+        options: ["Sword", "Spear", "Staff", "Bow", "Dagger", "Axe"]
+        default: "Sword"
       - label: "Rarity"
         name: "rarity"
         widget: "select"
         options: ["SP", "SSR", "SR", "R"]
         default: "SSR"
+      - { label: "Attack", name: "attack", widget: "number", value_type: "int" }
+      - { label: "Health", name: "health", widget: "number", value_type: "int" }
       - label: "Skins"
         name: "skins"
         widget: "list"
         summary: "{{fields.skin.name}}"
+        default: []
         fields:
           - label: "Skin"
             name: "skin"
             widget: "object"
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
-      - label: "Tunings"
-        name: "tunings"
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+      - label: "Resonances"
+        name: "resonances"
         widget: "list"
-        summary: "{{fields.tuning.name}}"
+        summary: "{{fields.resonance.name}}"
+        default: []
         fields:
-          - label: "Tuning"
-            name: "tuning"
+          - label: "Resonance"
+            name: "resonance"
             widget: "object"
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Icon", name: "icon", widget: "image"}
-              - label: "Description"
+              - { label: "Resonance Name", name: "name", widget: "string" }
+              - { label: "Resonance Icon", name: "icon", widget: "image" }
+              - label: "Resonance Description"
                 name: "description"
+                widget: "markdown"
+                buttons: ["bold"]
+                editor_components: []
+              - label: "Resonance Effects"
+                name: "effects"
                 widget: "list"
-                types:
-                  - label: "Text"
-                    name: "text"
-                    widget: "object"
-                    fields:
-                      - {label: "Text", name: "text", widget: "string"}
-                  - label: "Effect"
+                fields:
+                  - label: "Resonance Effect"
                     name: "effect"
                     widget: "object"
                     fields:
-                      - {label: "Name", name: "name", widget: "string", default: "wtf"}
-                      - {label: "Description", name: "description", widget: "text"}
-                      - {label: "Icon", name: "icon", widget: "image"}
-              - {label: "Upgrade", name: "upgrade", widget: "text", required: false}
-
-
+                      - { label: "Resonance Effect Name", name: "name", widget: "string", default: "wtf" }
+                      - { label: "Resonance Effect Description", name: "description", widget: "text" }
+                      - { label: "Resonance Effect Icon", name: "icon", widget: "image" }
+      - label: "Skills"
+        name: "skills"
+        widget: "list"
+        default: []
+        summary: "{{fields.skill.name}}"
+        fields:
+          - label: "Skill"
+            name: "skill"
+            widget: "object"
+            fields:
+              - { label: "Skill Name", name: "name", widget: "string" }
+              - { label: "Skill Icon", name: "icon", widget: "image" }
+              - { label: "Skill Cooldown", name: "cooldown", widget: "number", value_type: "int", min: 0, max: 100 }
+              - label: "Skill Description"
+                name: "description"
+                widget: "markdown"
+                buttons: ["bold"]
+                editor_components: []
+              - label: "Skill Effects"
+                name: "effects"
+                widget: "list"
+                fields:
+                  - label: "Skill Effect"
+                    name: "effect"
+                    widget: "object"
+                    fields:
+                      - { label: "Skill Effect Name", name: "name", widget: "string", default: "wtf" }
+                      - { label: "Skill Effect Description", name: "description", widget: "text" }
+                      - { label: "Skill Effect Icon", name: "icon", widget: "image" }
+      - label: "Passives"
+        name: "passives"
+        widget: "list"
+        default: []
+        summary: "{{fields.passive.name}}"
+        fields:
+          - label: "Passive"
+            name: "passive"
+            widget: "object"
+            fields:
+              - { label: "Passive Name", name: "name", widget: "string" }
+              - {
+                  label: "Passive type",
+                  name: "type",
+                  widget: "select",
+                  options: ["Normal", "Synchro"],
+                  default: "Normal",
+                }
+              - label: "Passive Description"
+                name: "description"
+                widget: "markdown"
+                buttons: ["bold"]
+                editor_components: []

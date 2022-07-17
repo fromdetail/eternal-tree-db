@@ -5,11 +5,11 @@ title: Characters page
 <div class="container mx-auto">
   <div class="grid grid-cols-12 gap-2 mx-autp">
     {%- for character in characters -%}
-      <div class="w-full rounded">
-        <a href="{{character.name | slug}}">
-          <img class="object-cover h-20 w-20" src="{{character.avatar}}" alt="">
-        </a>
-      </div>
+    <div class="w-full rounded">
+      <a href="{{character.name | slug}}">
+        <img class="object-cover h-20 w-20" src="{{character.avatar}}" alt="">
+      </a>
+    </div>
     {%- endfor -%}
   </div>
-<div>
+  <div>
