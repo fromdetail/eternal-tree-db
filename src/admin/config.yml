@@ -15,20 +15,54 @@ collections:
   - label: "Characters"
     name: "character"
     identifier_field: name
-    folder: "src/characters"
+    folder: "src/game-data/characters"
     create: true
     extension: "json"
     editor:
       preview: false
     fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: 'Tags', name: 'tags', widget: "hidden", default: "characters" }
-      - label: "Avatar"
-        name: "address"
-        widget: "object"
-        collapsed: true
-        fields: 
-          - {label: "Street Address", name: "street", widget: "string"}
-          - {label: "City", name: "city", widget: "string"}
-          - {label: "Postal Code", name: "post-code", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Avatar", name: "avatar", widget: "image"}
+      - label: "Rarity"
+        name: "rarity"
+        widget: "select"
+        options: ["SP", "SSR", "SR", "R"]
+        default: "SSR"
+      - label: "Skins"
+        name: "skins"
+        widget: "list"
+        fields:
+          - label: "Skin"
+            name: "skin"
+            widget: "object"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+      - label: "Tunings"
+        name: "tunings"
+        widget: "list"
+        fields:
+          - label: "Tuning"
+            name: "tuning"
+            widget: "object"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "image"}
+              - label: "Description"
+                name: "description"
+                widget: "list"
+                types:
+                  - label: "Text"
+                    name: "text"
+                    widget: "object"
+                    fields:
+                      - {label: "Text", name: "text", widget: "string"}
+                  - label: "Effect"
+                    name: "effect"
+                    widget: "object"
+                    fields:
+                      - {label: "Name", name: "name", widget: "string", default: "wtf"}
+                      - {label: "Description", name: "description", widget: "text"}
+                      - {label: "Icon", name: "icon", widget: "image"}
+
+
