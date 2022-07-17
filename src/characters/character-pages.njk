@@ -8,7 +8,7 @@ layout: base
 ---
 
 <div class="container px-4 my-4 mx-auto">
-	<h1 class="text-3xl text-center mb-4">{{character.name}}</h1>
+	<h1 class="text-4xl text-center mb-4">{{character.name}}</h1>
 	<div class="flex flex-wrap">
 		<div class="w-full mb-4" x-data="{ imgSrc: '{{character.skins[0].skin.image}}'}">
 			<img x-ref="galleryImage" x-bind:src="imgSrc" src="{{character.skins[0].skin.image}}" alt="">
@@ -27,13 +27,13 @@ layout: base
 		<div class="w-full">
 			<section>
 				<h2 class="text-2xl mb-4">Resonance</h2>
-				{% for tuning in character.tunings %}
+				{% for resonance in character.resonances %}
 				<div>
-					<div class="flex items-center">
-						<img class="w-14 h-14 mr-4" src="{{tuning.tuning.icon}}" alt="">
-						<h3 class="text-xl">{{tuning.tuning.name}}</h3>
+					<div class="flex items-center mb-2">
+						<img class="w-14 h-14 mr-4" src="{{resonance.resonance.icon}}" alt="">
+						<h3 class="text-xl">{{resonance.resonance.name}}</h3>
 					</div>
-					<p></p>
+					{% markdown resonance.resonance.description %}
 				</div>
 				{% endfor %}
 			</section>
