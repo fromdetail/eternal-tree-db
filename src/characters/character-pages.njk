@@ -24,20 +24,59 @@ layout: base
 		</div>
 		<div>
 		</div>
-		<div class="w-full">
-			<section>
-				<h2 class="text-2xl mb-4">Resonance</h2>
-				{% for resonance in character.resonances %}
-				<div>
-					<div class="flex items-center mb-2">
-						<img class="w-14 h-14 mr-4" src="{{resonance.resonance.icon}}" alt="">
-						<h3 class="text-xl">{{resonance.resonance.name}}</h3>
-					</div>
-					{% markdown resonance.resonance.description %}
+		<section class="w-full mb-8">
+			<h2 class="text-2xl mb-6">Resonance</h2>
+			{% for resonance in character.resonances %}
+			<div class="mb-6 pb-4 border-b-2 last:mb-0">
+				<div class="flex items-center mb-4">
+					<img class="w-14 h-14 mr-4" src="{{resonance.resonance.icon}}" alt="">
+					<h3 class="text-xl">{{resonance.resonance.name}}</h3>
 				</div>
-				{% endfor %}
-			</section>
-
-		</div>
+				<div class="">
+					{% markdown resonance.resonance.description %}
+					{% if resonance.resonance.effects | length %}
+					<div class="ml-6 mt-4">
+						<h4 class="text-lg mb-2">Resonance Effects</h4>
+						{% for effect in resonance.resonance.effects %}
+						<div class="mb-2 last:mb-0">
+							<div class="flex items-center mb-1">
+								<img class="w-8 h-8 mr-3" src="{{effect.effect.icon}}" alt="">
+								<h3 class="text-base">{{effect.effect.name}}</h3>
+							</div>
+							{% markdown effect.effect.description %}
+						</div>
+						{% endfor %}
+					</div>
+					{% endif %}
+				</div>
+			</div>
+			{% endfor %}
+		</section>
+		<section class="w-full">
+			<h2 class="text-2xl mb-6">Skills</h2>
+			{% for skill in character.skills %}
+			<div class="mb-6 pb-4 border-b-2">
+				<div class="flex items-center mb-4">
+					<img class="w-14 h-14 mr-4" src="{{skill.skill.icon}}" alt="">
+					<h3 class="text-xl">{{skill.skill.name}}</h3>
+				</div>
+				{% markdown skill.skill.description %}
+				{% if skill.skill.effects | length %}
+				<div class="ml-6 mt-4">
+					<h4 class="text-lg mb-2">Skill Effects</h4>
+					{% for effect in skill.skill.effects %}
+					<div class="mb-2 last:mb-0">
+						<div class="flex items-center mb-1">
+							<img class="w-8 h-8 mr-3" src="{{effect.effect.icon}}" alt="">
+							<h3 class="text-base">{{effect.effect.name}}</h3>
+						</div>
+						{% markdown effect.effect.description %}
+					</div>
+					{% endfor %}
+				</div>
+				{% endif %}
+			</div>
+			{% endfor %}
+		</section>
 	</div>
 </div>
