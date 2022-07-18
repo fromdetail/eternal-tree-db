@@ -2,7 +2,7 @@
   "skills": [
     {
       "skill": {
-        "description": "Grants all allies **Regeneration** (250+25% HP for 3 turn, 1500 cap, last 3 turns) and **increases Burst Point by 15**\\\nUpgrade: Also grants **35% Legato** (3 turns)",
+        "description": "Grants all allies **Regeneration** (250+25% HP for 3 turn, cap 1500, last 3 turns) and **increases Burst Point by 15**\\\nUpgrade: Also grants **35% Legato** (3 turns)",
         "name": "隠しメニュー (Hidden Menu)",
         "icon": "/assets/img/skill-gaiyoulimited-1.png",
         "cooldown": 8
@@ -37,7 +37,7 @@
   "resonances": [
     {
       "resonance": {
-        "description": "**Consumes 40% HP of all all allies**, grants all allies **30% Enmity, 40% Water Defense Up** and **removes 2 debuff**\n\nUpgrade: Grants all earth allies **25% chase damage**",
+        "description": "**Consumes 40% current HP of all all allies**, grants all allies **30% Enmity, 40% Water Defense Up** and **removes 2 debuff**\n\nUpgrade: Grants all earth allies **25% chase damage**",
         "name": "天華桜閃 (Midsummer Delivery)",
         "icon": "/assets/img/resonance-gaiyoulimited.png"
       }
@@ -65,7 +65,7 @@
       "passive": {
         "type": "Synchro",
         "name": "シンクロ加護 (Divine Protection of Synchronization)",
-        "description": "After using **Special Drink**, **fully charges target's Tuning Bar**"
+        "description": "After using **Special Drink**, **fully charges target's Burst Point**"
       }
     }
   ],
