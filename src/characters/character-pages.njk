@@ -11,12 +11,15 @@ layout: base
 	<h1 class="text-4xl font-light text-center mb-4 md:mb-8 lg:mb-12">{{character.name}}</h1>
 	<div class="flex flex-wrap md:mb-10 lg:mb-14">
 		<div class="w-full mb-6 md:w-1/2 md:mb-0 lg:w-1/3 flex flex-col" x-data="{ imgSrc: '{{character.skins[0].skin.image}}'}">
-			<img x-ref="galleryImage" x-bind:src="imgSrc" src="{{character.skins[0].skin.image}}" alt="">
+			<a x-bind:href="imgSrc" target="__blank">
+				<img x-ref="galleryImage" x-bind:src="imgSrc" src="{{character.skins[0].skin.image}}" alt="">
+			</a>
 			<div class="flex items-center mb-4 mt-auto">
 				{% if character.skins|length %}
 				{% for skin in character.skins %}
 				<button type="button"
-					class="w-full border-l border-t border-b text-base font-medium rounded-l-md text-black bg-white hover:bg-gray-100 px-4 py-2"
+					class="w-full border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2"
+					x-bind:class="imgSrc == '{{skin.skin.image}}' ? 'bg-gray-100' : ''"
 					x-on:click="imgSrc = '{{skin.skin.image}}'">{{skin.skin.name}}</button>
 				{% endfor %}
 				{% endif %}
