@@ -80,7 +80,7 @@
       }
     }
   ],
-  "role": "Attack",
+  "role": "Special",
   "skins": [
     {
       "skin": {
@@ -92,6 +92,12 @@
       "skin": {
         "name": "Ascension",
         "image": "/assets/img/skin-toujilimited-ascension.png"
+      }
+    },
+    {
+      "skin": {
+        "image": "/assets/img/skin-touji-paidskin.png",
+        "name": "paid skin"
       }
     }
   ],
