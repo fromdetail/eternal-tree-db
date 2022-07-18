@@ -62,35 +62,35 @@ collections:
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
-      - label: "Resonances"
+      - label: "Bursts"
         name: "resonances"
         widget: "list"
         summary: "{{fields.resonance.name}}"
         default: []
         fields:
-          - label: "Resonance"
+          - label: "Burst"
             name: "resonance"
             widget: "object"
             fields:
-              - { label: "Resonance Name", name: "name", widget: "string" }
-              - { label: "Resonance Icon", name: "icon", widget: "image" }
-              - label: "Resonance Description"
+              - { label: "Burst Name", name: "name", widget: "string" }
+              - { label: "Burst Icon", name: "icon", widget: "image" }
+              - label: "Burst Description"
                 name: "description"
                 widget: "markdown"
                 modes: ["rich_text"]
                 buttons: ["bold"]
                 editor_components: []
-              - label: "Resonance Effects"
+              - label: "Burst Effects"
                 name: "effects"
                 widget: "list"
                 fields:
-                  - label: "Resonance Effect"
+                  - label: "Burst Effect"
                     name: "effect"
                     widget: "object"
                     fields:
-                      - { label: "Resonance Effect Name", name: "name", widget: "string", default: "wtf" }
-                      - { label: "Resonance Effect Description", name: "description", widget: "text" }
-                      - { label: "Resonance Effect Icon", name: "icon", widget: "image" }
+                      - { label: "Burst Effect Name", name: "name", widget: "string", default: "wtf" }
+                      - { label: "Burst Effect Description", name: "description", widget: "text" }
+                      - { label: "Burst Effect Icon", name: "icon", widget: "image" }
       - label: "Skills"
         name: "skills"
         widget: "list"
