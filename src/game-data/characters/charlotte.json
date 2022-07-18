@@ -52,7 +52,7 @@
       "passive": {
         "type": "Normal",
         "name": "Polished Mirror, Still Water",
-        "description": "**When attacking:** Receive **3 burst value**.\n\n**After strengthening:** Receive an additional **5 burst** **value**."
+        "description": "**When attacking:** Receive an additional **3 burst value**.\n\n**After strengthening:** Receive a further additional **5 burst** **value**."
       }
     },
     {
