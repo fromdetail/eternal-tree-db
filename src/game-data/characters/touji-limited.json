@@ -62,14 +62,14 @@
       "passive": {
         "type": "Normal",
         "name": "passive1",
-        "description": "When using Resonance, grant to self **1 stack** of **effect3**\\\nEffect: Each stack **increase attack, double attack rate, triple attack rate, damage cap up**. Max 5 stacks (this effect can't be dispelled)"
+        "description": "When using Resonance, grant to self **1 stack** of **effect3**\\\nEffect3: Each stack **increase attack, double attack rate, triple attack rate, damage cap up**. Max 5 stacks (this effect can't be dispelled)"
       }
     },
     {
       "passive": {
         "type": "Normal",
         "name": "passive2",
-        "description": "Increase own burst value speed gain. When triple attack, reduce skill2 cooldown by **1 turn**"
+        "description": "Increase own burst value gain speed. When triple attack, reduce skill2 cooldown by **1 turn**"
       }
     },
     {
