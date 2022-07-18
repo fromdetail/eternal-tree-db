@@ -5,7 +5,7 @@
         "name": "Scattering Cherry Blossom",
         "icon": "/assets/img/skill-charlotte-1.png",
         "cooldown": 5,
-        "description": "Inflicts **280% earth attribute damage** to all enemies and inflicts **15% earth defense decrease** to the targets for **120 seconds**, grants herself **40% enhanced attack probability** increase for **3 turns** and a **50% chase damage** increase for **3 turns**",
+        "description": "Inflicts **280% earth attribute damage** to all enemies and inflicts **15% earth defense decrease** to the targets for **120 seconds.**\n\nGains **40% enhanced attack probability** increase for **3 turns** and a **50% chase damage** increase for **3 turns.**",
         "effects": []
       }
     },
@@ -14,7 +14,7 @@
         "name": "Ignorance Cutter",
         "icon": "/assets/img/skill-charlotte-2.png",
         "cooldown": 5,
-        "description": "Deals **400% earth attribute damage** to a single enemy and grants herself **No Remorse** for **1 turn.**",
+        "description": "Deals **400% earth attribute damage** to a single enemy.\n\nGains **\\[No Remorse]** for **1 turn**.",
         "effects": [
           {
             "effect": {
@@ -33,7 +33,7 @@
       "resonance": {
         "name": "Cherry Blossom Flash",
         "icon": "/assets/img/resonance-charlotte.png",
-        "description": "Inflicts **420%** earth attribute damage to all enemies and grants herself **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns** and **50% chance to reset the cooldown of skill 2**."
+        "description": "Inflicts **420%** earth attribute damage to all enemies.\\\nGains **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns** and **50% chance to reset the cooldown of \\[Ignorance Cutter]**."
       }
     }
   ],
@@ -52,14 +52,14 @@
       "passive": {
         "type": "Normal",
         "name": "Polished Mirror, Still Water",
-        "description": "When normal attacking receive an additional **8 burst value**"
+        "description": "**When attacking:** receive an additional **8 burst value**"
       }
     },
     {
       "passive": {
         "type": "Synchro",
         "name": "Synchronized Blessing",
-        "description": "While afflicted by **Earth attack increase**, gain additional chase damage"
+        "description": "**While afflicted by Earth attack increase:** Gain additional chase damage"
       }
     }
   ],
