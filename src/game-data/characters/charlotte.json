@@ -20,7 +20,7 @@
           {
             "effect": {
               "name": "No Remorse",
-              "description": "Damage dealt +30%, taunt all enemies, all damage received -50%. \nWhen attacked: counter-attack, counterattack can trigger enhanced attack.",
+              "description": "Damage dealt +30%, taunt all enemies, all damage received -50%. \n\n**When attacked:** **Counterattack**, counterattack can trigger enhanced attack.",
               "icon": "/assets/img/skill-charlotte-2.png"
             }
           }
@@ -48,7 +48,7 @@
       "passive": {
         "type": "Normal",
         "name": "Heavenly Eye",
-        "description": "Receive a 1-turn **counter-attack** every 3 rounds.\n\n**When HP is below 50%:** Increase hatred value."
+        "description": "Receive a 1-turn **counterattack** every 3 rounds.\n\n**When HP is below 50%:** Increase hatred value."
       }
     },
     {
