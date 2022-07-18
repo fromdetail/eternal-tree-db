@@ -1,7 +1,7 @@
 backend:
   # Use netlify identity as backend
   name: git-gateway
-  branch: master
+  branch: main
   ### enable below lines for github integration ###
   # name: github
   # repo: fromdetail/eternal-tree-db
@@ -9,7 +9,7 @@ media_folder: "src/assets/img"
 public_folder: "/assets/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
-local_backend: true
+# local_backend: true
 # publish_mode: editorial_workflow
 collections:
   - label: "Characters"
