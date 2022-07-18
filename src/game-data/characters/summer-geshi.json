@@ -59,7 +59,7 @@
       "passive": {
         "type": "Synchro",
         "name": "Synchronized Blessing",
-        "description": "Increase all water allies **bursts damage by 5%** & **bursts** **damage cap increase by 5%**."
+        "description": "Increase all water allies **skill damage by 5%** & **skill** **damage cap increase by 5%**."
       }
     }
   ],
