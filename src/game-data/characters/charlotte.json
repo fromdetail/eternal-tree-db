@@ -33,7 +33,7 @@
       "resonance": {
         "name": "Cherry Blossom Flash",
         "icon": "/assets/img/resonance-charlotte.png",
-        "description": "Inflicts **420%** earth attribute damage to all enemies.\\\nGains **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns** and **50% chance to reset the cooldown of \\[Ignorance Cutter]**."
+        "description": "Inflicts **420%** earth attribute damage to all enemies.\\\nGains **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns** \n\n**After strengthening:** 50% chance to reset the cooldown of **\\[Ignorance Cutter]**."
       }
     }
   ],
@@ -52,7 +52,7 @@
       "passive": {
         "type": "Normal",
         "name": "Polished Mirror, Still Water",
-        "description": "**When attacking:** receive an additional **8 burst value**"
+        "description": "**When attacking:** Receive **3 burst value**.\n\n**After strengthening:** Receive an additional **5 burst** **value**."
       }
     },
     {
