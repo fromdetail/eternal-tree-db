@@ -2,7 +2,7 @@
   "skills": [
     {
       "skill": {
-        "name": "First charlottes skill need a name again",
+        "name": "Scattering Cherry Blossom",
         "icon": "/assets/img/skill-charlotte-1.png",
         "cooldown": 5,
         "description": "Inflicts **280% earth attribute damage** to all enemies and inflicts **15% earth defense decrease** to the targets for **120 seconds**, grants herself **40% enhanced attack probability** increase for **3 turns** and a **50% chase damage** increase for **3 turns**",
@@ -11,7 +11,7 @@
     },
     {
       "skill": {
-        "name": "Charlottes skill numer 2 english name please",
+        "name": "Ignorance Cutter",
         "icon": "/assets/img/skill-charlotte-2.png",
         "cooldown": 5,
         "description": "Deals **400% earth attribute damage** to a single enemy and grants herself **No Remorse** for **1 turn.**",
