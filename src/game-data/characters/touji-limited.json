@@ -2,14 +2,14 @@
   "skills": [
     {
       "skill": {
-        "name": "Skill 1",
+        "name": "スイカ投げ (Saint's Trial)",
         "icon": "/assets/img/skill-toujilimited-1.png",
         "cooldown": 5,
-        "description": "Inflicts **400% fire attribute damage** to single enemy and inflicts **effect1** to the targets for **180 seconds**, **Delay** target by **1 turn**",
+        "description": "Inflicts **400% fire attribute damage** to single enemy and inflicts **Watermelon Mask**, **Delay** target by **1 turn**",
         "effects": [
           {
             "effect": {
-              "name": "effect1",
+              "name": "Watermelon Mask",
               "description": "Attack -25%, Fire resist -25%, Debuff resist -10%, last 180 seconds",
               "icon": "/assets/img/effect-toujilimitedeffect1.png"
             }
@@ -19,14 +19,14 @@
     },
     {
       "skill": {
-        "name": "Skill 2",
+        "name": "特製スムージー (Special Smoothies)",
         "icon": "/assets/img/skill-toujilimited-2.png",
         "cooldown": 16,
-        "description": "ST3\n\nGrant all Fire attribute allies **effect2** and **guarantee triple attack** for 1 turn",
+        "description": "ST3\n\nGrants all Fire allies **Refreshing Smoothie effect** and **guarantee triple attack** for 1 turn",
         "effects": [
           {
             "effect": {
-              "name": "effect2",
+              "name": "Refreshing Smoothie",
               "description": "Critical Damage +20%, Attack +15%, Auto Attack Damage Cap +150%, all Damage Cap +15%, last 1 turn",
               "icon": "/assets/img/effect-toujilimitedeffect2.png"
             }
@@ -39,9 +39,9 @@
   "resonances": [
     {
       "resonance": {
-        "name": "Touji resonance",
+        "name": "翠夏両断 (Summer's Slash)",
         "icon": "/assets/img/resonance-toujilimited.png",
-        "description": "Inflicts **1280%** fire attribute damage to single enemy and grants herself **Resonance Seal effect** for **3 turns**, **Dispel 1 buff** from target and **reset the cooldown of skill 1**",
+        "description": "Inflicts **1280%** fire attribute damage to single enemy and gain **Resonance Seal effect** for **3 turns**, **Dispel 1 buff** from target and **reset the cooldown of skill 1**",
         "effects": [
           {
             "effect": {
@@ -61,22 +61,22 @@
     {
       "passive": {
         "type": "Normal",
-        "name": "passive1",
-        "description": "When using Resonance, grant to self **1 stack** of **effect3**\\\nEffect3: Each stack **increase attack, double attack rate, triple attack rate, damage cap up**. Max 5 stacks (this effect can't be dispelled)"
+        "name": "Passive1",
+        "description": "When using Resonance, gains **1 Victory** stack\\\n**Victory**: Each stack **increase attack, double attack rate, triple attack rate, damage cap up**. Max 5 stacks (this effect can't be dispelled)"
       }
     },
     {
       "passive": {
         "type": "Normal",
-        "name": "passive2",
-        "description": "Increase own burst value gain speed. When triple attack, reduce skill2 cooldown by **1 turn**"
+        "name": "平気法日光術式冬至 (?)",
+        "description": "Increases Tuning Charge Rate. When triple attack, reduce **Special Smoothing** cooldown by **1 turn**"
       }
     },
     {
       "passive": {
         "type": "Synchro",
-        "description": "All fire attribute allies auto attack will have **20% chase damage**",
-        "name": "synchro"
+        "description": "Grants all fire allies auto attack **20% chase damage**",
+        "name": "シンクロ加護 (Divine Protection of Synchronization)"
       }
     }
   ],
