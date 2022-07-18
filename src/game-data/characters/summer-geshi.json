@@ -39,7 +39,7 @@
   ],
   "attack": 6010,
   "rarity": "SSR",
-  "name": "Summer geshi",
+  "name": "Summer Geshi (limited)",
   "passives": [
     {
       "passive": {
@@ -64,7 +64,14 @@
     }
   ],
   "role": "Attack",
-  "skins": [],
+  "skins": [
+    {
+      "skin": {
+        "image": "https://patchwiki.biligame.com/images/yjzs/thumb/6/68/0ebay0ntz0lvvbv2yktuq3y91qklqxg.png/681px-%E7%9A%AE%E8%82%A4_%E5%A4%8F%E8%87%B3%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89_%E8%BF%8E%E6%96%B0.png",
+        "name": "Summer Geshi (limited)"
+      }
+    }
+  ],
   "avatar": "https://patchwiki.biligame.com/images/yjzs/thumb/1/1d/322b1lenidhipxtl47st9g1qwwyrhh0.png/619px-%E5%A4%8F%E8%87%B3%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89%E7%AB%8B%E7%BB%98.png",
   "weapon": "Staff",
   "health": 2390,
