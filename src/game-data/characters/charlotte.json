@@ -20,7 +20,7 @@
           {
             "effect": {
               "name": "No Remorse",
-              "description": "Damage dealt +30%, taunt all enemies, all damage received -50%. \n\n**When attacked:** **Counterattack**, counterattack can trigger enhanced attack.",
+              "description": "Taunst all enemies.\n\nGains a **50% damage reduction** and an **additional 30% damage dealt** to all enemies\n\n**When attacked:** **Counterattack**, counterattack can **trigger enhanced attack**.",
               "icon": "/assets/img/skill-charlotte-2.png"
             }
           }
@@ -48,7 +48,7 @@
       "passive": {
         "type": "Normal",
         "name": "Heavenly Eye",
-        "description": "Receive a 1-turn **counterattack** every 3 rounds.\n\n**When HP is below 50%:** Increase hatred value."
+        "description": "Receive a **1-turn** **counterattack** every 3 rounds.\n\n**When HP is below 50%:** Increase **hatred value**."
       }
     },
     {
@@ -63,7 +63,7 @@
       "passive": {
         "type": "Synchro",
         "name": "Synchronized Blessing",
-        "description": "**While afflicted by Earth attack increase:** Gain additional chase damage"
+        "description": "**While afflicted by Earth attack increase:** Gain **additional chase damage**"
       }
     }
   ],
