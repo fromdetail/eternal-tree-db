@@ -3,7 +3,7 @@ pagination:
   data: characters
   size: 1
   alias: character
-permalink: "characters/{{ character.name | slug }}/"
+permalink: "characters/{{ character.name | slugify }}/"
 layout: base
 ---
 

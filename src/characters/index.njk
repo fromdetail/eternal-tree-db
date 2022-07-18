@@ -3,13 +3,91 @@ layout: base
 title: Characters page
 ---
 <div class="container mx-auto">
-  <div class="grid grid-cols-12 gap-2 mx-autp">
-    {%- for character in characters -%}
-    <div class="w-full rounded">
-      <a href="{{character.name | slug}}">
-        <img class="object-cover h-20 w-20" src="{{character.avatar}}" alt="">
-      </a>
-    </div>
-    {%- endfor -%}
-  </div>
+  <section x-data="charactersFilter">
+    <nav>
+      <div>
+        <button x-on:click="raritiesFilter('SP')">SP</button>
+        <button x-on:click="raritiesFilter('SSR')">SSR</button>
+        <button x-on:click="raritiesFilter('SR')">SR</button>
+        <button x-on:click="raritiesFilter('R')">R</button>
+      </div>
+      <div>
+        <button x-on:click="elementsFilter('Water')">Water</button>
+        <button x-on:click="elementsFilter('Fire')">Fire</button>
+        <button x-on:click="elementsFilter('Wind')">Wind</button>
+        <button x-on:click="elementsFilter('Earth')">Earth</button>
+        <button x-on:click="elementsFilter('Light')">Light</button>
+        <button x-on:click="elementsFilter('Dark')">Dark</button>
+      </div>
+      <input x-model="search" type="text">
+    </nav>
+    <ul>
+      <template x-for="character in filteredCharacters">
+        <li>
+          <a :href="character.permalink">
+            <img class="object-cover h-20 w-20" :src="character.avatar" :alt="character.name">
+            <p x-text="character.name"></p>
+          </a>
+        </li>
+      </template>
+    </ul>
+  </section>
   <div>
+
+<script>
+  const characters = [
+    {%- for character in characters -%}
+    { permalink: '/characters/{{character.name |slugify}}', character: {{character | dump | safe }}},
+    {%- endfor -%}
+  ].map(character => {
+    return {permalink: character.permalink, ...character.character}
+  })
+
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('charactersFilter', ()=> ({
+      search: '',
+      rarities: [],
+      elements: [],
+      characters: characters,
+      get filteredCharacters() {
+        let filtered = this.characters
+        if (this.rarities.length) {
+          filtered = filtered.filter(character => {
+            return this.rarities.includes(character.rarity)
+          })
+        }
+        if (this.elements.length) {
+          filtered = filtered.filter(character => {
+            return this.elements.includes(character.element)
+          })
+        }
+        if (this.search) {
+          filtered = filtered.filter(character => {
+            return character.name.toLowerCase().includes(this.search.toLowerCase())
+          })
+        }
+        return filtered
+      },
+      raritiesFilter(rarity) {
+        console.log(rarity)
+        if (this.rarities.includes(rarity)) {
+          this.rarities = this.rarities.filter(rar => {
+            return rar != rarity
+          })
+          return
+        }
+        this.rarities.push(rarity)
+      },
+      elementsFilter(element) {
+        console.log(element)
+        if (this.elements.includes(element)) {
+          this.elements = this.elements.filter(ele => {
+            return ele != element
+          })
+          return
+        }
+        this.elements.push(element)
+      }
+    }))
+  })
+</script>
