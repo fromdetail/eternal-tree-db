@@ -5,7 +5,7 @@
         "name": "スイカ投げ (Saint's Trial)",
         "icon": "/assets/img/skill-toujilimited-1.png",
         "cooldown": 5,
-        "description": "Inflicts **400% fire attribute damage** to single enemy and inflicts **Watermelon Mask**, **Delay** target by **1 turn**",
+        "description": "Inflicts **400% fire attribute damage** to single enemy and inflicts **Watermelon Mask**\\\nEnhance: Cooldown reduced to **5**, **Delay** target **1 turn**",
         "effects": [
           {
             "effect": {
@@ -22,7 +22,7 @@
         "name": "特製スムージー (Special Smoothies)",
         "icon": "/assets/img/skill-toujilimited-2.png",
         "cooldown": 16,
-        "description": "ST3\n\nGrants all Fire allies **Refreshing Smoothie effect** and **guarantee triple attack** for 1 turn",
+        "description": "ST3\n\nGrants all Fire allies 1 turn **Refreshing Smoothie effect**\\\nEnhance: Also grants 1 turn **guarantee triple attack**",
         "effects": [
           {
             "effect": {
@@ -41,12 +41,12 @@
       "resonance": {
         "name": "翠夏両断 (Summer's Slash)",
         "icon": "/assets/img/resonance-toujilimited.png",
-        "description": "Inflicts **1280%** fire attribute damage to single enemy and gain **Resonance Seal effect** for **3 turns**, **Dispel 1 buff** from target and **reset the cooldown of skill 1 スイカ投げ (Saint's Trial)**",
+        "description": "Inflicts **1280%** fire attribute damage to single enemy and gain **Burst Seal effect** for **3 turns** and **reset the cooldown of Skill 1 スイカ投げ (Saint's Trial)**\\\nEnhance: **Dispel 1 buff** from target",
         "effects": [
           {
             "effect": {
-              "name": "Resonance seal",
-              "description": "Can't use Resonance, last 3 turns (can't be dispeled)",
+              "name": "Burst seal",
+              "description": "Can't use Burst, last 3 turns (can't be dispeled)",
               "icon": "/assets/img/effect-resonanceseal.png"
             }
           }
@@ -62,7 +62,7 @@
       "passive": {
         "type": "Normal",
         "name": "真夏のスイカ割り大会 (Watermelon Splitting Contest)",
-        "description": "When using Resonance, gains **1 Victory** stack\\\n**Victory**: Each stack **increase attack, double attack rate, triple attack rate, damage cap up**. Max 5 stacks (this effect can't be dispelled)"
+        "description": "When using Resonance, gains **1 Victory** stack\\\n**Victory**: Each stack **increase attack, double attack rate, triple attack rate, damage cap up**. Max 5 stacks (this effect can't be dispelled)\\\nEnhance: Increase buff value"
       }
     },
     {
