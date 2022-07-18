@@ -41,7 +41,7 @@
       "resonance": {
         "name": "翠夏両断 (Summer's Slash)",
         "icon": "/assets/img/resonance-toujilimited.png",
-        "description": "Inflicts **1280%** fire attribute damage to single enemy and gain **Resonance Seal effect** for **3 turns**, **Dispel 1 buff** from target and **reset the cooldown of skill 1**",
+        "description": "Inflicts **1280%** fire attribute damage to single enemy and gain **Resonance Seal effect** for **3 turns**, **Dispel 1 buff** from target and **reset the cooldown of skill 1 スイカ投げ (Saint's Trial)**",
         "effects": [
           {
             "effect": {
@@ -69,7 +69,7 @@
       "passive": {
         "type": "Normal",
         "name": "平気法日光術式冬至 (?)",
-        "description": "Increases Tuning Charge Rate. When triple attack, reduce **Special Smoothing** cooldown by **1 turn**"
+        "description": "Increases Tuning Charge Rate. When she triple attack, shorten **Skill 2 Special Smoothing** cooldown by **1 turn**"
       }
     },
     {
