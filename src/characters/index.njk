@@ -3,30 +3,63 @@ layout: base
 title: Characters page
 ---
 <div class="container mx-auto">
-  <section x-data="charactersFilter">
-    <nav>
-      <div>
-        <button x-on:click="raritiesFilter('SP')">SP</button>
-        <button x-on:click="raritiesFilter('SSR')">SSR</button>
-        <button x-on:click="raritiesFilter('SR')">SR</button>
-        <button x-on:click="raritiesFilter('R')">R</button>
+  <section class="p-4 " x-data="charactersFilter">
+    <nav class="mb-8 max-w-2xl mx-auto">
+      <div class="flex items-center mb-4">
+        <div class="text-lg w-20 mr-4">Rarity</div>
+        <div>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="rarities.includes('SP') ? 'bg-gray-100' : ''"
+          x-on:click="raritiesFilter('SP')">SP</button>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="rarities.includes('SSR') ? 'bg-gray-100' : ''"
+          x-on:click="raritiesFilter('SSR')">SSR</button>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="rarities.includes('SR') ? 'bg-gray-100' : ''"
+          x-on:click="raritiesFilter('SR')">SR</button>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="rarities.includes('R') ? 'bg-gray-100' : ''"
+          x-on:click="raritiesFilter('R')">R</button>
+        </div>
       </div>
-      <div>
-        <button x-on:click="elementsFilter('Water')">Water</button>
-        <button x-on:click="elementsFilter('Fire')">Fire</button>
-        <button x-on:click="elementsFilter('Wind')">Wind</button>
-        <button x-on:click="elementsFilter('Earth')">Earth</button>
-        <button x-on:click="elementsFilter('Light')">Light</button>
-        <button x-on:click="elementsFilter('Dark')">Dark</button>
+      <div class="flex items-center mb-4">
+        <div class="text-lg w-20 mr-4">Elements</div>
+        <div>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="elements.includes('Water') ? 'bg-gray-100' : ''"
+          x-on:click="elementsFilter('Water')">Water</button>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="elements.includes('Fire') ? 'bg-gray-100' : ''"
+          x-on:click="elementsFilter('Fire')">Fire</button>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="elements.includes('Wind') ? 'bg-gray-100' : ''"
+          x-on:click="elementsFilter('Wind')">Wind</button>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="elements.includes('Earth') ? 'bg-gray-100' : ''"
+          x-on:click="elementsFilter('Earth')">Earth</button>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="elements.includes('Light') ? 'bg-gray-100' : ''"
+          x-on:click="elementsFilter('Light')">Light</button>
+          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          x-bind:class="elements.includes('Dark') ? 'bg-gray-100' : ''"
+          x-on:click="elementsFilter('Dark')">Dark</button>
+        </div>
       </div>
-      <input x-model="search" type="text">
+      <div class="relative">
+        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+        </div>
+        <input x-model="search" type="text" class="border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+      </div>
     </nav>
-    <ul>
+    <ul class="flex flex-wrap text-center justify-center mx-auto">
       <template x-for="character in filteredCharacters">
-        <li>
-          <a :href="character.permalink">
-            <img class="object-cover h-20 w-20" :src="character.avatar" :alt="character.name">
-            <p x-text="character.name"></p>
+        <li class="w-20 grow-0 m-1 overflow-hidden transition ease-in-out hover:scale-125">
+          <a class="flex flex-col w-20 h-32 border" :href="character.permalink">
+            <div class="bg-white">
+              <img class="object-cover h-20 w-20" :src="character.avatar" :alt="character.name">
+            </div>
+            <p class="text-xs p-1 my-auto" x-text="character.name"></p>
           </a>
         </li>
       </template>
