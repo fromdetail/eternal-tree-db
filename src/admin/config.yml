@@ -80,6 +80,13 @@ collections:
                 modes: ["rich_text"]
                 buttons: ["bold"]
                 editor_components: []
+              - label: "Burst Upgrade"
+                name: "upgrade"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+                required: false
               - label: "Burst Effects"
                 name: "effects"
                 widget: "list"
@@ -115,6 +122,13 @@ collections:
                 modes: ["rich_text"]
                 buttons: ["bold"]
                 editor_components: []
+              - label: "Skill Upgrade"
+                name: "upgrade"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+                required: false
               - label: "Skill Effects"
                 name: "effects"
                 widget: "list"
@@ -155,3 +169,10 @@ collections:
                 modes: ["rich_text"]
                 buttons: ["bold"]
                 editor_components: []
+              - label: "Passive Upgrade"
+                name: "upgrade"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+                required: false

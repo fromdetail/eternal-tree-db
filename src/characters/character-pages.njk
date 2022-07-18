@@ -128,6 +128,11 @@ eleventyComputed:
 				</div>
 				<div class="">
 					{% markdown resonance.resonance.description %}
+          {% if resonance.resonance.upgrade %}
+          <div class="italic border-t pt-2 mt-2">
+            {% markdown resonance.resonance.upgrade %}
+          </div>
+          {% endif %}
 					{% if resonance.resonance.effects | length %}
 					<div class="ml-6 mt-4">
 						<h4 class="text-lg mb-2">Burst Effects</h4>
@@ -155,6 +160,11 @@ eleventyComputed:
 					<h3 class="text-xl">{{skill.skill.name}}</h3>
 				</div>
 				{% markdown skill.skill.description %}
+        {% if skill.skill.upgrade %}
+        <div class="italic border-t pt-2 mt-2">
+          {% markdown skill.skill.upgrade %}
+        </div>
+        {% endif %}
 				<p class="text-sm text-gray-500 text-right mt-2">Cooldown: {{skill.skill.cooldown}} turns</p>
 				{% if skill.skill.effects | length %}
 				<div class="ml-6 mt-4">
@@ -186,6 +196,11 @@ eleventyComputed:
 					<h3 class="text-xl">{{passive.passive.name}}</h3>
 				</div>
 				{% markdown passive.passive.description %}
+        {% if passive.passive.upgrade %}
+        <div class="italic border-t pt-2 mt-2">
+          {% markdown passive.passive.upgrade %}
+        </div>
+        {% endif %}
 			</div>
 			{% endfor %}
 		</section>

@@ -5,8 +5,9 @@
         "name": "First charlottes skill need a name again",
         "icon": "/assets/img/skill-charlotte-1.png",
         "cooldown": 5,
-        "description": "Inflicts **280% earth attribute damage** to all enemies and inflicts **15% earth defense decrease** to the targets for **120 seconds**, grants herself **40% enhanced attack probability** increase for **3 turns** and a **50% chase damage** increase for **3 turns**",
-        "effects": []
+        "description": "Inflicts **280% earth attribute damage** to all enemies and inflicts **15% earth defense decrease** to the targets for **120 seconds**\n\nGrants herself **40% enhanced attack probability** increase for **3 turns** and a **50% chase damage** increase for **3 turns**",
+        "effects": [],
+        "upgrade": "**After strengthening:** Inflicts **15% earth defense decrease** to all targets for **120 seconds.** Gains an extra **20% chase damage**."
       }
     },
     {
@@ -23,7 +24,8 @@
               "icon": "/assets/img/skill-charlotte-2.png"
             }
           }
-        ]
+        ],
+        "upgrade": "Deals **400% earth attribute damage** to a single enemy and grants herself **No Remorse** for **1 turn.**"
       }
     }
   ],
@@ -33,7 +35,8 @@
       "resonance": {
         "name": "Charlottes OP burst I need an english name",
         "icon": "/assets/img/resonance-charlotte.png",
-        "description": "Inflicts **420%** earth attribute damage to all enemies and grants herself **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns** and **50% chance to reset the cooldown of skill 2**"
+        "description": "Inflicts **420%** earth attribute damage to all enemies and grants herself **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns** and **50% chance to reset the cooldown of skill 2**",
+        "upgrade": "Testing"
       }
     }
   ],
@@ -45,7 +48,8 @@
       "passive": {
         "type": "Normal",
         "name": "First passive english name",
-        "description": "Every 3 rounds receive a counterattack for 1 turn\n\nWhen her HP is below 50% increase hatred value"
+        "description": "Every 3 rounds receive a counterattack for 1 turn\n\nWhen her HP is below 50% increase hatred value",
+        "upgrade": "Testing"
       }
     },
     {
