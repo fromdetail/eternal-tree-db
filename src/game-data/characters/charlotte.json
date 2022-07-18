@@ -5,8 +5,9 @@
         "name": "Scattering Cherry Blossom",
         "icon": "/assets/img/skill-charlotte-1.png",
         "cooldown": 5,
-        "description": "Inflicts **280% earth attribute damage** to all enemies. and inflicts **15% earth defense decrease** to the targets for **120 seconds.**\n\nGains **40% enhanced attack probability** increase for **3 turns** and **30% chase damage** for **3 turns.**\n\n**After strengthening:** Inflicts **15% earth defense decrease** to all targets for **120 seconds.** Gains an extra **20% chase damage**.",
-        "effects": []
+        "description": "Inflicts **280% earth attribute damage** to all enemies. and inflicts **15% earth defense decrease** to the targets for **120 seconds.**\n\nGains **40% enhanced attack probability** increase for **3 turns** and **30% chase damage** for **3 turns.**",
+        "effects": [],
+        "upgrade": "**After strengthening:** Inflicts **15% earth defense decrease** to all targets for **120 seconds.** Gains an extra **20% chase damage**."
       }
     },
     {
@@ -14,7 +15,7 @@
         "name": "Ignorance Cutter",
         "icon": "/assets/img/skill-charlotte-2.png",
         "cooldown": 6,
-        "description": "Deals **400% earth attribute damage** to a single enemy.\n\nGains **\\[No Remorse]** for **1 turn**.\n\n**After strengthening:** Reduce cooldown by 1 turn.",
+        "description": "Deals **400% earth attribute damage** to a single enemy.\n\nGains **\\[No Remorse]** for **1 turn**.",
         "effects": [
           {
             "effect": {
@@ -23,7 +24,8 @@
               "icon": "/assets/img/skill-charlotte-2.png"
             }
           }
-        ]
+        ],
+        "upgrade": "**After strengthening:** Reduce cooldown by 1 turn."
       }
     }
   ],
@@ -33,7 +35,8 @@
       "resonance": {
         "name": "Cherry Blossom Flash",
         "icon": "/assets/img/resonance-charlotte.png",
-        "description": "Inflicts **420%** earth attribute damage to all enemies.\\\nGains **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns** \n\n**After strengthening:** 50% chance to reset the cooldown of **\\[Ignorance Cutter]**."
+        "description": "Inflicts **420%** earth attribute damage to all enemies.\\\nGains **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns**",
+        "upgrade": "**After strengthening:** 50% chance to reset the cooldown of **\\[Ignorance Cutter]**."
       }
     }
   ],
@@ -52,7 +55,8 @@
       "passive": {
         "type": "Normal",
         "name": "Polished Mirror, Still Water",
-        "description": "**When attacking:** Receive an additional **3 burst value**.\n\n**After strengthening:** Receive a further additional **5 burst** **value**."
+        "description": "**When attacking:** Receive an additional **3 burst value**.",
+        "upgrade": "**After strengthening:** Receive a further additional **5 burst** **value**."
       }
     },
     {
