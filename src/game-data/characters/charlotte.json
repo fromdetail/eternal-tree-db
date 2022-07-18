@@ -31,9 +31,9 @@
   "resonances": [
     {
       "resonance": {
-        "name": "Charlottes OP burst I need an english name",
+        "name": "Cherry Blossom Flash",
         "icon": "/assets/img/resonance-charlotte.png",
-        "description": "Inflicts **420%** earth attribute damage to all enemies and grants herself **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns** and **50% chance to reset the cooldown of skill 2**"
+        "description": "Inflicts **420%** earth attribute damage to all enemies and grants herself **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns** and **50% chance to reset the cooldown of skill 2**."
       }
     }
   ],
@@ -44,21 +44,21 @@
     {
       "passive": {
         "type": "Normal",
-        "name": "First passive english name",
+        "name": "Heavenly Eye",
         "description": "Every 3 rounds receive a counterattack for 1 turn\n\nWhen her HP is below 50% increase hatred value"
       }
     },
     {
       "passive": {
         "type": "Normal",
-        "name": "Passive number two",
+        "name": "Polished Mirror, Still Water",
         "description": "When normal attacking receive an additional **8 burst value**"
       }
     },
     {
       "passive": {
         "type": "Synchro",
-        "name": "Synchro passive english name",
+        "name": "Synchronized Blessing",
         "description": "While afflicted by **Earth attack increase**, gain additional chase damage"
       }
     }
