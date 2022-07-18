@@ -52,7 +52,7 @@
       "passive": {
         "type": "Normal",
         "name": "Midsummer Season",
-        "description": "When self use bursts, shorten own skill (**Midsummer Blessing**) cooldown by **1**.\n\nWhen turn end, if self were to receive attack from enemies, gain self **1 stack of Zero Ice Crest**"
+        "description": "When self use bursts, shorten own skill **(Midsummer Blessing)** cooldown by **1**.\n\nWhen turn end, if self were to receive attack from enemies, gain self **1 stack of Zero Ice Crest**"
       }
     },
     {
