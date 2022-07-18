@@ -46,7 +46,7 @@
           {
             "effect": {
               "name": "Resonance seal",
-              "description": "Last 3 turns, can't be dispeled.",
+              "description": "Can't use Resonance, last 3 turns (can't be dispeled)",
               "icon": "/assets/img/effect-resonanceseal.png"
             }
           }
@@ -61,7 +61,7 @@
     {
       "passive": {
         "type": "Normal",
-        "name": "Passive1",
+        "name": "真夏のスイカ割り大会 (Watermelon Splitting Contest)",
         "description": "When using Resonance, gains **1 Victory** stack\\\n**Victory**: Each stack **increase attack, double attack rate, triple attack rate, damage cap up**. Max 5 stacks (this effect can't be dispelled)"
       }
     },
