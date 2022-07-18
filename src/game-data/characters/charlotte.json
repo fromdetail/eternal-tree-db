@@ -36,7 +36,8 @@
         "name": "Cherry Blossom Flash",
         "icon": "/assets/img/resonance-charlotte.png",
         "description": "Inflicts **420%** earth attribute damage to all enemies.\\\nGains **50% earth attribute attack increase** for **3 turns**, **30% counterattack damage increase** for **3 turns**",
-        "upgrade": "**After strengthening:** 50% chance to reset the cooldown of **\\[Ignorance Cutter]**."
+        "upgrade": "**After strengthening:** reset the cooldown of **\\[Ignorance Cutter]**.",
+        "effects": []
       }
     }
   ],
