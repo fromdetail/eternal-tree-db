@@ -5,4 +5,5 @@
 .md-block > p {
   font-size: 0.875em;
   line-height: 1.25rem;
+  margin-bottom: 0.25rem;
 }
