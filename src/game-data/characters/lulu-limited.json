@@ -1,0 +1,99 @@
+{
+  "skills": [
+    {
+      "skill": {
+        "name": "Happy game",
+        "cooldown": 7,
+        "description": "Give all allies dark attribute character  **Happy Memories** effect for **3 turns.**",
+        "upgrade": "**After strengthening :** Grant all allies dark attribute characters **Legato** effects for **3 turns**  and increase burst value by **30%**",
+        "effects": [
+          {
+            "effect": {
+              "name": "Legato",
+              "description": "increase Burst gain value from any source by **35%** for **3 Turns**",
+              "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/5/52/1gljb3cs28q3e50jxg3burtwbxbbv9l.png/60px-%E9%9C%B2%E9%9C%B2%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89_%E5%85%B1%E9%B8%A3%E4%B8%80.png"
+            }
+          },
+          {
+            "effect": {
+              "name": "Happy Memories",
+              "description": "Increase **Attack Power** by **30%**, **Defense Power** by **30% ,** **enhanced** & **Heavy Attack Probability** by **25%** , **Resistance to Abnormal Status** by **60%** ; normal attack adds **25% damage** (Cannot be dispelled)",
+              "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/5/52/1gljb3cs28q3e50jxg3burtwbxbbv9l.png/60px-%E9%9C%B2%E9%9C%B2%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89_%E5%85%B1%E9%B8%A3%E4%B8%80.png"
+            }
+          }
+        ],
+        "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/5/52/1gljb3cs28q3e50jxg3burtwbxbbv9l.png/60px-%E9%9C%B2%E9%9C%B2%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89_%E5%85%B1%E9%B8%A3%E4%B8%80.png"
+      }
+    },
+    {
+      "skill": {
+        "name": "Pass the ball!",
+        "description": "Inflict on a single enemy  **4 times** **126%** dark attribute damage, and give 1 layer of **Defense Down(Stackable)** effect; restore all our character **400+10%max Health.**",
+        "cooldown": 4,
+        "upgrade": "**After strengthening :** Increase Damage  **126% -> 130% ;** decrease cooldown from  **4 -> 3** turn ; if herself have **Happy Memories** effect gain own burst value by 10%",
+        "effects": [
+          {
+            "effect": {
+              "name": "Defense down (stackable)",
+              "description": "Decrease enemy defense by 10% , stack up to 3 layers",
+              "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/a/a5/1z2to1cocyr9sg3cdzgtqm2f7yrheto.png/60px-%E9%9C%B2%E9%9C%B2%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89_%E5%85%B1%E9%B8%A3%E4%BA%8C.png"
+            }
+          }
+        ],
+        "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/a/a5/1z2to1cocyr9sg3cdzgtqm2f7yrheto.png/60px-%E9%9C%B2%E9%9C%B2%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89_%E5%85%B1%E9%B8%A3%E4%BA%8C.png"
+      }
+    }
+  ],
+  "gacha": "Limited",
+  "resonances": [
+    {
+      "resonance": {
+        "name": "Waves Pitching",
+        "description": "Inflicts **420%** dark attribute damage to all enemies and grant all allies shield effect , if herself have **Happy Memories**  effect, then dispel 1 additional **buff** status from all enemies.",
+        "upgrade": "**After strengthening :** grants 1 layer to self **Phantom Effect.**",
+        "effects": [
+          {
+            "effect": {
+              "name": "Phantom",
+              "description": "Dodge any attack 1 times",
+              "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/5/57/rx8rq4570ht2zmkwc5epi7yl1f4ctor.png/60px-%E9%9C%B2%E9%9C%B2%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89_%E8%B0%83%E5%BE%8B.png"
+            }
+          }
+        ],
+        "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/5/57/rx8rq4570ht2zmkwc5epi7yl1f4ctor.png/60px-%E9%9C%B2%E9%9C%B2%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89_%E8%B0%83%E5%BE%8B.png"
+      }
+    }
+  ],
+  "attack": 5131,
+  "rarity": "SSR",
+  "name": "Lulu ( Limited)",
+  "passives": [
+    {
+      "passive": {
+        "type": "Normal",
+        "name": "Unexpected Encounter~",
+        "description": "At the end of the round, if Lulu take no damage or 0 damage , the cooldown of **Pass the ball!** will be refreshed"
+      }
+    },
+    {
+      "passive": {
+        "type": "Normal",
+        "name": "Glory Volleyball",
+        "description": "Increase Resonance(Skill) damage and Resonance(skill) damage limit of all allies dark attribute character"
+      }
+    },
+    {
+      "passive": {
+        "type": "Synchro",
+        "name": "Synchronized Blessing",
+        "description": "Using  **Waves Pitching** will refresh cooldown skill of **Pass the ball!**"
+      }
+    }
+  ],
+  "role": "Special",
+  "skins": [],
+  "avatar": "https://patchwiki.biligame.com/images/yjzs/thumb/b/b3/4wdvul7ftfkliuizq0fijbtdzlmwzt3.png/362px-%E9%9C%B2%E9%9C%B2%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89%E7%AB%8B%E7%BB%98.png",
+  "weapon": "Dagger",
+  "health": 3165,
+  "element": "Dark"
+}
