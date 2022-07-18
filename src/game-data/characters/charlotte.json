@@ -13,8 +13,8 @@
       "skill": {
         "name": "Ignorance Cutter",
         "icon": "/assets/img/skill-charlotte-2.png",
-        "cooldown": 5,
-        "description": "Deals **400% earth attribute damage** to a single enemy.\n\nGains **\\[No Remorse]** for **1 turn**.",
+        "cooldown": 6,
+        "description": "Deals **400% earth attribute damage** to a single enemy.\n\nGains **\\[No Remorse]** for **1 turn**.\n\n**After strengthening:** Reduce cooldown by 1 turn.",
         "effects": [
           {
             "effect": {
