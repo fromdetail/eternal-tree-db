@@ -14,7 +14,7 @@
         "name": "Midsummer Blessing",
         "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/9/91/ce5c91f5bc0yoml2h1f2b3e43rvr0fb.png/90px-%E5%A4%8F%E8%87%B3%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89%E4%BA%8C.png",
         "cooldown": 10,
-        "description": "Increases the **double attack(35%) & triple attack(25%) activation rate**, **critical Damage (30%)** and gain **1** **Zero Ice Crest**.\n\nIf self **Zero Ice Crest** reaches **5 stacks**, will consume 1 stack of **Zero Ice Crest** to gain **30% chase damage.**\n\nAfter strengthening: when self **Zero Ice Crest** reaches **5 stacks**, will consume 1 stack of **Zero Ice Crest** to gain **10% damage cap increase**."
+        "description": "Increases the **double attack (35%) & triple attack (25%) activation rate**, **critical Damage (30%)** and gain **1** **Zero Ice Crest**.\n\nIf self **Zero Ice Crest** reaches **5 stacks**, will consume 1 stack of **Zero Ice Crest** to gain **30% chase damage.**\n\nAfter strengthening: when self **Zero Ice Crest** reaches **5 stacks**, will consume 1 stack of **Zero Ice Crest** to gain **10% damage cap increase**."
       }
     }
   ],
