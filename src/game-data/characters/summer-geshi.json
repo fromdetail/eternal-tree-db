@@ -5,7 +5,7 @@
         "name": "Clear Torrent",
         "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/a/a8/bws4fdj2hhi54u3cpczim8lznhhdnhb.png/90px-%E5%A4%8F%E8%87%B3%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89%E4%B8%80.png",
         "cooldown": 6,
-        "description": "Deals **331% water damage** to a single enemy and **Dispel 1 Buff** on the target.\n\nGive self **1 stack of Zero Ice Crest** effects, and add **400% water damage** per stack of **Zero Ice Crest.**\n\nAfter strengthening: Cooldown from **6→5**",
+        "description": "Deals **331% water attribute damage** to a single enemy and **Dispel 1 Buff** on the target.\n\nGive self **1 stack of Zero Ice Crest** effects, and add **400% water damage** per stack of **Zero Ice Crest.**\n\nAfter strengthening: Cooldown from **6→5**",
         "effects": []
       }
     },
