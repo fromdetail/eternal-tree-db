@@ -89,7 +89,12 @@ collections:
                     widget: "object"
                     fields:
                       - { label: "Burst Effect Name", name: "name", widget: "string", default: "wtf" }
-                      - { label: "Burst Effect Description", name: "description", widget: "text" }
+                      - label: "Burst Effect Description"
+                        name: "description"
+                        widget: "markdown"
+                        modes: ["rich_text"]
+                        buttons: ["bold"]
+                        editor_components: []
                       - { label: "Burst Effect Icon", name: "icon", widget: "image" }
       - label: "Skills"
         name: "skills"
@@ -119,7 +124,12 @@ collections:
                     widget: "object"
                     fields:
                       - { label: "Skill Effect Name", name: "name", widget: "string", default: "wtf" }
-                      - { label: "Skill Effect Description", name: "description", widget: "text" }
+                      - label: "Skill Effect Description"
+                        name: "description"
+                        widget: "markdown"
+                        modes: ["rich_text"]
+                        buttons: ["bold"]
+                        editor_components: []
                       - { label: "Skill Effect Icon", name: "icon", widget: "image" }
       - label: "Passives"
         name: "passives"
