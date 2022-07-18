@@ -1,46 +1,46 @@
 ---
 layout: base
-title: Characters page
+title: Eternal Tree Database | Characters
 ---
 <div class="container mx-auto">
   <section class="p-4 " x-data="charactersFilter">
     <nav class="mb-8 max-w-2xl mx-auto">
       <div class="flex items-center mb-4">
-        <div class="text-lg w-20 mr-4">Rarity</div>
+        <div class="text-lg w-20 mr-2">Rarity</div>
         <div>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="rarities.includes('SP') ? 'bg-gray-100' : ''"
           x-on:click="raritiesFilter('SP')">SP</button>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="rarities.includes('SSR') ? 'bg-gray-100' : ''"
           x-on:click="raritiesFilter('SSR')">SSR</button>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="rarities.includes('SR') ? 'bg-gray-100' : ''"
           x-on:click="raritiesFilter('SR')">SR</button>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="rarities.includes('R') ? 'bg-gray-100' : ''"
           x-on:click="raritiesFilter('R')">R</button>
         </div>
       </div>
       <div class="flex items-center mb-4">
-        <div class="text-lg w-20 mr-4">Elements</div>
+        <div class="text-lg w-20 mr-2">Elements</div>
         <div>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="elements.includes('Water') ? 'bg-gray-100' : ''"
           x-on:click="elementsFilter('Water')">Water</button>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="elements.includes('Fire') ? 'bg-gray-100' : ''"
           x-on:click="elementsFilter('Fire')">Fire</button>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="elements.includes('Wind') ? 'bg-gray-100' : ''"
           x-on:click="elementsFilter('Wind')">Wind</button>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="elements.includes('Earth') ? 'bg-gray-100' : ''"
           x-on:click="elementsFilter('Earth')">Earth</button>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="elements.includes('Light') ? 'bg-gray-100' : ''"
           x-on:click="elementsFilter('Light')">Light</button>
-          <button class="m-1 border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
+          <button class="m-px border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2" 
           x-bind:class="elements.includes('Dark') ? 'bg-gray-100' : ''"
           x-on:click="elementsFilter('Dark')">Dark</button>
         </div>

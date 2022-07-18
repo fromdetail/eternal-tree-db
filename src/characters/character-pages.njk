@@ -5,6 +5,8 @@ pagination:
   alias: character
 permalink: "characters/{{ character.name | slugify }}/"
 layout: base
+eleventyComputed:
+  title: "Eternal Tree Database | {{ character.name }}"
 ---
 
 <div class="container px-4 my-4 mx-auto">
