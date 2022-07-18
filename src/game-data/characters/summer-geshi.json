@@ -1,0 +1,72 @@
+{
+  "skills": [
+    {
+      "skill": {
+        "name": "Clear Torrent",
+        "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/a/a8/bws4fdj2hhi54u3cpczim8lznhhdnhb.png/90px-%E5%A4%8F%E8%87%B3%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89%E4%B8%80.png",
+        "cooldown": 6,
+        "description": "Deals **331% water damage** to a single enemy and **Dispel 1 Buff** on the target.\n\nGive self **1 stack of Zero Ice Crest** effects, and add **400% water damage** per stack of **Zero Ice Crest.**\n\nAfter strengthening: Cooldown from **6→5**",
+        "effects": []
+      }
+    },
+    {
+      "skill": {
+        "name": "Midsummer Blessing",
+        "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/9/91/ce5c91f5bc0yoml2h1f2b3e43rvr0fb.png/90px-%E5%A4%8F%E8%87%B3%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89%E4%BA%8C.png",
+        "cooldown": 10,
+        "description": "Increases the **double attack(35%) & triple attack(25%) activation rate**, **critical Damage (30%)** and gain **1** **Zero Ice Crest**.\n\nIf self **Zero Ice Crest** reaches **5 stacks**, will consume 1 stack of **Zero Ice Crest** to gain **30% chase damage.**\n\nAfter strengthening: when self **Zero Ice Crest** reaches **5 stacks**, will consume 1 stack of **Zero Ice Crest** to gain **10% damage cap increase**."
+      }
+    }
+  ],
+  "gacha": "Limited",
+  "resonances": [
+    {
+      "resonance": {
+        "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/8/8d/dl5v5jn7acjrcz45sgfu7v17113mc1c.png/90px-%E5%A4%8F%E8%87%B3%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89%E5%A5%A5%E4%B9%89.png",
+        "name": "Midsummer's Paradise",
+        "description": "Deals 320% water attribute damage to all enemies, grants the Midsummer Paradise effect to all allies, and also recovers 500 HP + maximum of 20% HP to all allies.\\\nIf self **Zero Ice Crest** is more than 3 stacks, reset the cool time of the resonance technique \"**Clear Torrent**\".\n\nAfter strengthening: Damage increase **400%→450%**",
+        "effects": [
+          {
+            "effect": {
+              "name": "Midsummer's Paradise",
+              "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/d/db/1o2srzf2c81ftttyq1p4scja1zbq9ho.png/27px-%E7%9B%9B%E5%A4%8F%E4%B9%90%E5%9B%AD.png",
+              "description": "Water attribute attack power +30%, fire attribute defense power +30% (3 turns)"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "attack": 6010,
+  "rarity": "SSR",
+  "name": "Summer geshi",
+  "passives": [
+    {
+      "passive": {
+        "type": "Normal",
+        "name": "Constant QI Clearing Technique",
+        "description": "Increase all **critical rate (25%)** of water allies in the party.\n\nAfter strengthening: When battle begin, give self **3 stack of Zero Ice Crest**."
+      }
+    },
+    {
+      "passive": {
+        "type": "Normal",
+        "name": "Midsummer Season",
+        "description": "When self use bursts, shorten own skill (**Midsummer Blessing**) cooldown by **1**.\n\nWhen turn end, if self were to receive attack from enemies, gain self **1 stack of Zero Ice Crest**"
+      }
+    },
+    {
+      "passive": {
+        "type": "Synchro",
+        "name": "Synchronized Blessing",
+        "description": "Increase all water allies **bursts damage by 5%** & **bursts** **damage cap increase by 5%**."
+      }
+    }
+  ],
+  "role": "Attack",
+  "skins": [],
+  "avatar": "https://patchwiki.biligame.com/images/yjzs/thumb/1/1d/322b1lenidhipxtl47st9g1qwwyrhh0.png/619px-%E5%A4%8F%E8%87%B3%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89%E7%AB%8B%E7%BB%98.png",
+  "weapon": "Staff",
+  "health": 2390,
+  "element": "Water"
+}
