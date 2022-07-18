@@ -24,7 +24,7 @@
       "resonance": {
         "icon": "https://patchwiki.biligame.com/images/yjzs/thumb/8/8d/dl5v5jn7acjrcz45sgfu7v17113mc1c.png/90px-%E5%A4%8F%E8%87%B3%EF%BC%88%E9%99%90%E5%AE%9A%EF%BC%89%E5%A5%A5%E4%B9%89.png",
         "name": "Midsummer's Paradise",
-        "description": "Deals 320% water attribute damage to all enemies, grants the Midsummer Paradise effect to all allies, and also recovers 500 HP + maximum of 20% HP to all allies.\\\nIf self **Zero Ice Crest** is more than 3 stacks, reset the cool time of the resonance technique \"**Clear Torrent**\".\n\nAfter strengthening: Damage increase **400%→450%**",
+        "description": "Deals **320% water attribute damage** to all enemies, grants the **Midsummer Paradise** **effect** to all allies, and also recovers **500 HP + maximum of 20% HP** to all allies.\\\nIf self **Zero Ice Crest** is more than 3 stacks, reset the cool time of the resonance technique \"**Clear Torrent**\".\n\nAfter strengthening: Damage increase **400%→450%**",
         "effects": [
           {
             "effect": {
