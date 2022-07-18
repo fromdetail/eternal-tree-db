@@ -1,0 +1,91 @@
+{
+  "skills": [
+    {
+      "skill": {
+        "description": "Grants all allies **Regeneration** (250+25% HP for 3 turn, 1500 cap, last 3 turns) and **increases Burst Point by 15**\\\nUpgrade: Also grants **35% Legato** (3 turns)",
+        "name": "隠しメニュー (Hidden Menu)",
+        "icon": "/assets/img/skill-gaiyoulimited-1.png",
+        "cooldown": 8
+      }
+    },
+    {
+      "skill": {
+        "name": "スペシャルドリンク (Special Drink)",
+        "icon": "/assets/img/skill-gaiyoulimited-2.png",
+        "cooldown": 6,
+        "description": "Grants an Earth ally **Special Made Drink**\\\nEnhance: Also grants **Pursuit,** all skill of target have **cooldown reduced by 1 turn**",
+        "effects": [
+          {
+            "effect": {
+              "name": "Special Made Drink",
+              "description": "Enhanced Attack Rate +25%, Defense +40%. Greatly increases Hate. Recovers HP at the end turn. (3 turns)",
+              "icon": "/assets/img/effect-gaiyoulimitedeffect1.png"
+            }
+          },
+          {
+            "effect": {
+              "name": "Pursuit",
+              "icon": "/assets/img/effect-pursuit.png",
+              "description": "Increase damage by 280%, increase normal attack damage cap by 150% (1 turn)"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "gacha": "Limited",
+  "resonances": [
+    {
+      "resonance": {
+        "description": "**Consumes 40% HP of all all allies**, grants all allies **30% Enmity, 40% Water Defense Up** and **removes 2 debuff**\n\nUpgrade: Grants all earth allies **25% chase damage**",
+        "name": "天華桜閃 (Midsummer Delivery)",
+        "icon": "/assets/img/resonance-gaiyoulimited.png"
+      }
+    }
+  ],
+  "attack": 5539,
+  "rarity": "SSR",
+  "name": "Gaiyou (Limited)",
+  "passives": [
+    {
+      "passive": {
+        "type": "Normal",
+        "name": "真夏の特急配達 (Summer Express Delivery)",
+        "description": "At the start of battle, grants all allies **10 Hype** (6 turns)\\\nEnhance: also grants **25% multi attack rate up** (6 turns)"
+      }
+    },
+    {
+      "passive": {
+        "type": "Normal",
+        "name": "ご注文ありがとうございます (Thanks For Your Order!)",
+        "description": "At the end of turn, if Gaiyou was taken damaged this turn, gains **1 Defense Up stack**. Increases all Earth allies **Normal Attack Damage Cap**"
+      }
+    },
+    {
+      "passive": {
+        "type": "Synchro",
+        "name": "シンクロ加護 (Divine Protection of Synchronization)",
+        "description": "After using **Special Drink**, **fully charges target's Tuning Bar**"
+      }
+    }
+  ],
+  "role": "Special",
+  "skins": [
+    {
+      "skin": {
+        "image": "/assets/img/skin-gaiyoulimited-base.png",
+        "name": "Base"
+      }
+    },
+    {
+      "skin": {
+        "name": "Ascension",
+        "image": "/assets/img/skin-gaiyoulimited-ascension.png"
+      }
+    }
+  ],
+  "avatar": "/assets/img/avatar-gaiyoulimited.png",
+  "weapon": "Spear",
+  "health": 2790,
+  "element": "Earth"
+}
