@@ -12,7 +12,9 @@
     {% markdown skill.upgrade %}
   </div>
   {% endif %}
+  {% if skill.cooldown %}
   <p class="text-sm text-gray-500 text-right mt-2">Cooldown: {{skill.cooldown}} turns</p>
+  {% endif  %}
   {% if skill.effects | length %}
   <div class="ml-6 mt-4">
     <h4 class="text-lg mb-2">Skill Effects</h4>
