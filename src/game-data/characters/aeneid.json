@@ -11,7 +11,7 @@
           {
             "effect": {
               "name": "Attack Down",
-              "description": "Attack -30% (last 60s)",
+              "description": "**Attack -30%**, last 60s",
               "icon": "/assets/img/effect-attackdown.png"
             }
           },
@@ -44,7 +44,7 @@
             "effect": {
               "name": "Shield",
               "icon": "/assets/img/effect-shield.png",
-              "description": "5000, until destroyed"
+              "description": "**5000**, until destroyed"
             }
           },
           {
@@ -76,7 +76,7 @@
           {
             "effect": {
               "name": "Enmity",
-              "description": "Increase 30% enmity, last 3 turns",
+              "description": "Increase **30% enmity**, last 3 turns",
               "icon": "/assets/img/effect-enmity.png"
             }
           },
