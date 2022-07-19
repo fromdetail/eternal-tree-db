@@ -17,16 +17,16 @@
           },
           {
             "effect": {
-              "name": "Bleeding",
-              "icon": "/assets/img/effect-bleeding.png",
-              "description": "1500 damage per stack, debuff resist small down, max 10 stacks, last 70s"
+              "name": "Counter Attack",
+              "icon": "/assets/img/effect-counterattack.png",
+              "description": "last 2 turns"
             }
           },
           {
             "effect": {
-              "name": "Counter Attack",
-              "icon": "/assets/img/effect-counterattack.png",
-              "description": "last 2 turns"
+              "name": "Bleeding",
+              "description": "1500 damage per stack, debuff resist small down, max 10 stacks, last 70s",
+              "icon": "/assets/img/effect-bleeding.png"
             }
           }
         ]
