@@ -10,7 +10,7 @@
           {
             "effect": {
               "name": "Watermelon Mask",
-              "description": "Attack -25%, Fire resist -25%, Debuff resist -10%, last 180 seconds",
+              "description": "**Attack -25%**, **Fire resist -25%**, **Debuff resist -10%**, last 180 seconds",
               "icon": "/assets/img/effect-toujilimitedeffect1.png"
             }
           }
@@ -28,7 +28,7 @@
           {
             "effect": {
               "name": "Refreshing Smoothie",
-              "description": "Critical Damage +20%, Attack +15%, Auto Attack Damage Cap +150%, all Damage Cap +15%, last 1 turn",
+              "description": "**Critical Damage +20%**, **Attack +15%**, **Auto Attack Damage Cap +150%**, **all Damage Cap +15%**, last 1 turn",
               "icon": "/assets/img/effect-toujilimitedeffect2.png"
             }
           }
@@ -72,7 +72,7 @@
     {
       "passive": {
         "type": "Normal",
-        "name": "平気法日光術式冬至 (?)",
+        "name": "Solar Term Technique - Winter Solstice",
         "description": "Increases Tuning Charge Rate. When she triple attack, shorten **Skill 2 Special Smoothing** cooldown by **1 turn**"
       }
     },
