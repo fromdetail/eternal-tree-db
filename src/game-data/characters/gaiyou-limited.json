@@ -6,7 +6,7 @@
         "name": "Hidden Menu",
         "icon": "/assets/img/skill-gaiyoulimited-1.png",
         "cooldown": 8,
-        "upgrade": "Also grants all allies **35% Legato** (3 turns)"
+        "upgrade": "**After strengthening:** Also grants all allies **35% Legato** (3 turns)"
       }
     },
     {
@@ -14,7 +14,7 @@
         "name": "Special Drink",
         "icon": "/assets/img/skill-gaiyoulimited-2.png",
         "cooldown": 6,
-        "description": "Grants an Earth ally **Special Made Drink**",
+        "description": "**After strengthening:** Grants an Earth ally **Special Made Drink**",
         "effects": [
           {
             "effect": {
@@ -42,7 +42,7 @@
         "description": "**Consumes 40% current HP of all all allies**, grants all allies **30% Enmity, 40% Water Defense Up** and **removes 2 debuff**",
         "name": "Midsummer Delivery",
         "icon": "/assets/img/resonance-gaiyoulimited.png",
-        "upgrade": "Grants all earth allies 3 turns auto attack **25% chase damage**"
+        "upgrade": "**After strengthening:** Grants all earth allies 3 turns auto attack **25% chase damage**"
       }
     }
   ],
@@ -55,7 +55,7 @@
         "type": "Normal",
         "name": "Summer Express Delivery",
         "description": "At the start of battle, grants all allies **10 Hype** (6 turns)",
-        "upgrade": "Also grants all allies **25% enhanced attack rate** (6 turns)"
+        "upgrade": "**After strengthening:** Also grants all allies **25% enhanced attack rate** (6 turns)"
       }
     },
     {
