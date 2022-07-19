@@ -2,10 +2,10 @@
   "skills": [
     {
       "skill": {
-        "name": "スイカ投げ (Saint's Trial)",
+        "name": "Saint's Trial",
         "icon": "/assets/img/skill-toujilimited-1.png",
         "cooldown": 5,
-        "description": "Inflicts **400% fire attribute damage** to single enemy and inflicts **Watermelon Mask**\\\nEnhance: Cooldown reduced to **5**, **Delay** target **1 turn**",
+        "description": "Inflicts **400% fire attribute damage** to single enemy and inflicts **Watermelon Mask**",
         "effects": [
           {
             "effect": {
@@ -14,15 +14,16 @@
               "icon": "/assets/img/effect-toujilimitedeffect1.png"
             }
           }
-        ]
+        ],
+        "upgrade": "Cooldown reduced from **6** to **5**, **Delay** target **1 turn**"
       }
     },
     {
       "skill": {
-        "name": "特製スムージー (Special Smoothies)",
+        "name": "Special Smoothies",
         "icon": "/assets/img/skill-toujilimited-2.png",
         "cooldown": 16,
-        "description": "ST3\n\nGrants all Fire allies 1 turn **Refreshing Smoothie effect**\\\nEnhance: Also grants 1 turn **guarantee triple attack**",
+        "description": "ST3\n\nGrants all Fire allies 1 turn **Refreshing Smoothie effect**",
         "effects": [
           {
             "effect": {
@@ -31,7 +32,8 @@
               "icon": "/assets/img/effect-toujilimitedeffect2.png"
             }
           }
-        ]
+        ],
+        "upgrade": "Also grants all fire allies 1 turn **guarantee triple attack**"
       }
     }
   ],
@@ -39,9 +41,9 @@
   "resonances": [
     {
       "resonance": {
-        "name": "翠夏両断 (Summer's Slash)",
+        "name": "Summer's Slash",
         "icon": "/assets/img/resonance-toujilimited.png",
-        "description": "Inflicts **1280%** fire attribute damage to single enemy and gain **Burst Seal effect** for **3 turns** and **reset the cooldown of Skill 1 スイカ投げ (Saint's Trial)**\\\nEnhance: **Dispel 1 buff** from target",
+        "description": "Inflicts **1280%** fire attribute damage to single enemy and gain **Burst Seal effect** for **3 turns** and **reset the cooldown of Skill 1 Saint's Trial**",
         "effects": [
           {
             "effect": {
@@ -50,7 +52,8 @@
               "icon": "/assets/img/effect-resonanceseal.png"
             }
           }
-        ]
+        ],
+        "upgrade": "**Dispel 1 buff** from target"
       }
     }
   ],
@@ -61,8 +64,9 @@
     {
       "passive": {
         "type": "Normal",
-        "name": "真夏のスイカ割り大会 (Watermelon Splitting Contest)",
-        "description": "When using Resonance, gains **1 Victory** stack\\\n**Victory**: Each stack **increase attack, double attack rate, triple attack rate, damage cap up**. Max 5 stacks (this effect can't be dispelled)\\\nEnhance: Increase buff value"
+        "name": "Watermelon Splitting Contest",
+        "description": "When using Resonance, gains **1 Victory** stack\\\n**Victory**: Each stack **increase attack, double attack rate, triple attack rate, damage cap up**. Max 5 stacks (this effect can't be dispelled)",
+        "upgrade": "Increase buff value"
       }
     },
     {
@@ -76,7 +80,7 @@
       "passive": {
         "type": "Synchro",
         "description": "Grants all fire allies auto attack **20% chase damage**",
-        "name": "シンクロ加護 (Divine Protection of Synchronization)"
+        "name": "Synchronized Blessing"
       }
     }
   ],
