@@ -5,7 +5,7 @@
         "description": "Deals **280% Earth damage** to a single enemy, inflicts **Attack Down** (-30%, last 60s). Gains **Counterattack** (2 turns)",
         "name": "Heat Cut",
         "cooldown": 6,
-        "upgrade": "Increase damage, inflicts 1 stack of **Bleeding**",
+        "upgrade": "**After strengthening:** Increase damage, inflicts 1 stack of **Bleeding**",
         "icon": "/assets/img/skill-aeneid-1.png"
       }
     },
@@ -15,7 +15,7 @@
         "description": "**Consumes 40% own HP**. Grants all allies **Shield** (5000, until destroyed) and **Defense Up** (55%, 3 turns)",
         "name": "Stirring",
         "icon": "/assets/img/skill-aeneid-2.png.png",
-        "upgrade": "**Defense Up** increase to 70%"
+        "upgrade": "**After strengthening: Defense Up** increase to 70%"
       }
     }
   ],
@@ -25,7 +25,7 @@
       "resonance": {
         "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding** (1500 damage per stack, debuff resist small down, max 10 stacks, last 70s). Grants **30% Enmity** (3 turns) to all allies.",
         "name": "Abyssal Automation",
-        "upgrade": "Gain **Cover** (1 turn)",
+        "upgrade": "**After strengthening:** Gain **Cover** (1 turn)",
         "effects": [],
         "icon": "/assets/img/burst-aeneid.png"
       }
@@ -38,7 +38,7 @@
     {
       "passive": {
         "type": "Normal",
-        "description": "At the start of battle, gains **Revive**. Increase self **Hate**. When attacking enemies inflicted with **Bleeding**, increases **Enhanced Attack Rate**",
+        "description": "At the start of battle, gains **Revive**. Increase own **Hate**. When attacking enemies inflicted with **Bleeding**, increases **Enhanced Attack Rate**",
         "name": "Unforgettable Sin"
       }
     },
@@ -47,7 +47,7 @@
         "type": "Normal",
         "description": "Increases self Water Defense. If HP is less than 50%, increases defense. If HP is less than 25%, further increases defense.",
         "name": "Secret Obsession",
-        "upgrade": "If own HP is less than 50%, increase defense"
+        "upgrade": "**After strengthening:** If own HP is less than 50%, increase defense"
       }
     },
     {
