@@ -1,0 +1,80 @@
+{
+  "skills": [
+    {
+      "skill": {
+        "description": "Deals **280% Earth damage** to a single enemy, inflicts **Attack Down** (-30%, last 60s). Gains **Counterattack** (2 turns)",
+        "name": "Heat Cut",
+        "cooldown": 6,
+        "upgrade": "Increase damage, inflicts 1 stack of **Bleeding**",
+        "icon": "/assets/img/skill-aeneid-1.png"
+      }
+    },
+    {
+      "skill": {
+        "cooldown": 7,
+        "description": "**Consumes 40% own HP**. Grants all allies **Shield** (5000, until destroyed) and **Defense Up** (55%, 3 turns)",
+        "name": "Stirring",
+        "icon": "/assets/img/skill-aeneid-2.png.png",
+        "upgrade": "**Defense Up** increase to 70%"
+      }
+    }
+  ],
+  "gacha": "Permanent",
+  "resonances": [
+    {
+      "resonance": {
+        "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding** (1500 damage per stack, debuff resist small down, max 10 stacks, last 70s). Grants **30% Enmity** (3 turns) to all allies.",
+        "name": "Abyssal Automation",
+        "upgrade": "Gain **Cover** (1 turn)",
+        "effects": [],
+        "icon": "/assets/img/burst-aeneid.png"
+      }
+    }
+  ],
+  "attack": 5325,
+  "rarity": "SSR",
+  "name": "Aeneid",
+  "passives": [
+    {
+      "passive": {
+        "type": "Normal",
+        "description": "At the start of battle, gains **Revive**. Increase self **Hate**. When attacking enemies inflicted with **Bleeding**, increases **Enhanced Attack Rate**",
+        "name": "Unforgettable Sin"
+      }
+    },
+    {
+      "passive": {
+        "type": "Normal",
+        "description": "Increases Water Defense. If HP is less than 50%, increases defense. If HP is less than 25%, further increases defense.",
+        "name": "Secret Obsession",
+        "upgrade": "If own HP is less than 50%, increase defense"
+      }
+    },
+    {
+      "passive": {
+        "type": "Synchro",
+        "description": "If HP is less than 40%, gains **Absorption** (1000, 3 turns) after using **Burst**.",
+        "name": "Synchronized Blessing"
+      }
+    }
+  ],
+  "role": "Defense",
+  "skins": [
+    {
+      "skin": {
+        "name": "Base",
+        "image": "/assets/img/skin-aeneid-base.png"
+      }
+    },
+    {
+      "skin": {
+        "name": "Ascension",
+        "image": "/assets/img/skin-aeneid-ascension.png"
+      }
+    }
+  ],
+  "avatar": "/assets/img/avatar-aeneid.png",
+  "weapon": "Spear",
+  "health": 3320,
+  "element": "Earth"
+}
