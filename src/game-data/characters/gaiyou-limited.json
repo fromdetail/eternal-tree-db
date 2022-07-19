@@ -2,18 +2,19 @@
   "skills": [
     {
       "skill": {
-        "description": "Grants all allies **Regeneration** (250+25% HP for 3 turn, cap 1500, last 3 turns) and **increases Burst Point by 15**\\\nUpgrade: Also grants **35% Legato** (3 turns)",
-        "name": "隠しメニュー (Hidden Menu)",
+        "description": "Grants all allies **Regeneration** (250+25% HP for 3 turn, cap 1500, last 3 turns) and **increases Burst Point by 15**",
+        "name": "Hidden Menu",
         "icon": "/assets/img/skill-gaiyoulimited-1.png",
-        "cooldown": 8
+        "cooldown": 8,
+        "upgrade": "Also grants all allies **35% Legato** (3 turns)"
       }
     },
     {
       "skill": {
-        "name": "スペシャルドリンク (Special Drink)",
+        "name": "Special Drink",
         "icon": "/assets/img/skill-gaiyoulimited-2.png",
         "cooldown": 6,
-        "description": "Grants an Earth ally **Special Made Drink**\\\nEnhance: Also grants **Pursuit,** all skill of target have **cooldown reduced by 1 turn**",
+        "description": "Grants an Earth ally **Special Made Drink**",
         "effects": [
           {
             "effect": {
@@ -29,7 +30,8 @@
               "description": "Increase damage by 280%, increase normal attack damage cap by 150% (1 turn)"
             }
           }
-        ]
+        ],
+        "upgrade": "All skill of target have **cooldown reduced by 1 turn**, also grants **Pursuit**"
       }
     }
   ],
@@ -37,9 +39,10 @@
   "resonances": [
     {
       "resonance": {
-        "description": "**Consumes 40% current HP of all all allies**, grants all allies **30% Enmity, 40% Water Defense Up** and **removes 2 debuff**\n\nUpgrade: Grants all earth allies **25% chase damage**",
-        "name": "天華桜閃 (Midsummer Delivery)",
-        "icon": "/assets/img/resonance-gaiyoulimited.png"
+        "description": "**Consumes 40% current HP of all all allies**, grants all allies **30% Enmity, 40% Water Defense Up** and **removes 2 debuff**",
+        "name": "Midsummer Delivery",
+        "icon": "/assets/img/resonance-gaiyoulimited.png",
+        "upgrade": "Grants all earth allies **25% chase damage**"
       }
     }
   ],
@@ -50,21 +53,22 @@
     {
       "passive": {
         "type": "Normal",
-        "name": "真夏の特急配達 (Summer Express Delivery)",
-        "description": "At the start of battle, grants all allies **10 Hype** (6 turns)\\\nEnhance: also grants **25% multi attack rate up** (6 turns)"
+        "name": "Summer Express Delivery",
+        "description": "At the start of battle, grants all allies **10 Hype** (6 turns)",
+        "upgrade": "Also grants all allies **25% enhanced attack rate** (6 turns)"
       }
     },
     {
       "passive": {
         "type": "Normal",
-        "name": "ご注文ありがとうございます (Thanks For Your Order!)",
+        "name": "Thanks For Your Order!",
         "description": "At the end of turn, if Gaiyou was taken damaged this turn, gains **1 Defense Up stack**. Increases all Earth allies **Normal Attack Damage Cap**"
       }
     },
     {
       "passive": {
         "type": "Synchro",
-        "name": "シンクロ加護 (Divine Protection of Synchronization)",
+        "name": "Synchronized Blessing",
         "description": "After using **Special Drink**, **fully charges target's Burst Point**"
       }
     }
