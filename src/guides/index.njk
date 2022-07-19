@@ -1,0 +1,11 @@
+---
+layout: base
+title: Eternal Tree Database | Characters
+---
+<div class="container mx-auto">
+  <nav class="text-center display">
+    {%- for guide in collections.guide -%}
+    <a class="block mb-2 text-2xl text-sky-500 hover:text-slate-700" href="{{guide.url}}">{{guide.data.title}}</a>
+    {%- endfor -%}
+  </nav>
+</div>

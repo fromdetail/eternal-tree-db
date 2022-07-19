@@ -403,3 +403,14 @@ collections:
                 buttons: ["bold"]
                 editor_components: []
                 required: false
+  - label: "Guide"
+    name: "guide"
+    folder: "src/guides"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "guide" }
+      - { label: "Tags", name: "tags", widget: "hidden", default: ["guide"] }
+      - { label: "Body", name: "body", widget: "markdown" }

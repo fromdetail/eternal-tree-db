@@ -18,11 +18,15 @@
   <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden" x-bind:class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.outside="isOpen = false" x-transition>
     <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
       <li class="mr-3">
-        <a class="inline-block no-underline hover:text-sky-200 hover:text-underline py-2 lg:px-4" href="/characters" @click="isOpen = false">Characters
+        <a class="inline-block no-underline hover:text-sky-500 hover:text-underline py-2 lg:px-4" href="/guides" @click="isOpen = false">Guides
         </a>
       </li>
       <li class="mr-3">
-        <a class="inline-block no-underline hover:text-sky-200 hover:text-underline py-2 lg:px-4" href="/classes" @click="isOpen = false">Classes
+        <a class="inline-block no-underline hover:text-sky-500 hover:text-underline py-2 lg:px-4" href="/characters" @click="isOpen = false">Characters
+        </a>
+      </li>
+      <li class="mr-3">
+        <a class="inline-block no-underline hover:text-sky-500 hover:text-underline py-2 lg:px-4" href="/classes" @click="isOpen = false">Classes
         </a>
       </li>
     </ul>
