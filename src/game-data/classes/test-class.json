@@ -1,0 +1,95 @@
+{
+  "classBonus": "**Lvl 1 -** increase something by +5%\n\n**Lvl 5 -** increase something by +5%\n\n**Lvl 10 -** increase something by +5%\n\n**Lvl 15 -** increase something by +5%\n\n**Lvl 20 -** increase something by +5%",
+  "name": "Test Class",
+  "passives": [
+    {
+      "passive": {
+        "type": "Normal",
+        "name": "Passive",
+        "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies.",
+        "upgrade": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies."
+      }
+    }
+  ],
+  "commonSkills": [
+    {
+      "commonSkill": {
+        "name": "Common skill",
+        "icon": "/assets/img/effect-counterattack.png",
+        "cooldown": 2,
+        "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies.",
+        "upgrade": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies.",
+        "effects": [
+          {
+            "effect": {
+              "name": "wtf",
+              "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies.",
+              "icon": "/assets/img/effect-counterattack.png"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "role": "Attack",
+  "skins": [
+    {
+      "skin": {
+        "name": "Female",
+        "image": "/assets/img/skin-toujilimited-base.png"
+      }
+    },
+    {
+      "skin": {
+        "name": "Male",
+        "image": "/assets/img/skin-gaiyoulimited-base.png"
+      }
+    }
+  ],
+  "avatar": "/assets/img/avatar-toujilimited.png",
+  "sharedBonus": "**Lvl 20 -** increase something by +5%",
+  "classSkills": [
+    {
+      "classSkill": {
+        "name": "Limited Skill name",
+        "icon": "/assets/img/effect-toujilimitedeffect2.png",
+        "cooldown": 3,
+        "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies.",
+        "upgrade": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies.",
+        "effects": [
+          {
+            "effect": {
+              "name": "wtf",
+              "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies.",
+              "icon": "/assets/img/effect-cover.png"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "mainSkills": [
+    {
+      "mainSkill": {
+        "name": "Galaxy cutter",
+        "icon": "/assets/img/resonance-gaiyoulimited.png",
+        "cooldown": 4,
+        "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies.",
+        "upgrade": "**After strengthening:** Gain **Cover**",
+        "effects": [
+          {
+            "effect": {
+              "name": "wtf",
+              "description": "**After strengthening:** Gain **Cover**",
+              "icon": "/assets/img/resonance-charlotte.png"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "weapon": [
+    "Sword",
+    "Spear"
+  ]
+}
