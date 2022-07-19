@@ -42,7 +42,7 @@
         "description": "**Consumes 40% current HP of all all allies**, grants all allies **30% Enmity, 40% Water Defense Up** and **removes 2 debuff**",
         "name": "Midsummer Delivery",
         "icon": "/assets/img/resonance-gaiyoulimited.png",
-        "upgrade": "Grants all earth allies **25% chase damage**"
+        "upgrade": "Grants all earth allies 3 turns auto attack **25% chase damage**"
       }
     }
   ],
