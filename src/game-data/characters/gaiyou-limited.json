@@ -19,7 +19,7 @@
           {
             "effect": {
               "name": "Special Made Drink",
-              "description": "Enhanced Attack Rate +25%, Defense +40%. Greatly increases Hate. Recovers HP at the end turn. (3 turns)",
+              "description": "**Enhanced Attack Rate +25%**, **Defense +40%**. Greatly increases **Hate**. **Recovers HP** at the end turn. (3 turns)",
               "icon": "/assets/img/effect-gaiyoulimitedeffect1.png"
             }
           },
@@ -27,7 +27,7 @@
             "effect": {
               "name": "Pursuit",
               "icon": "/assets/img/effect-pursuit.png",
-              "description": "Increase damage by 280%, increase normal attack damage cap by 150% (1 turn)"
+              "description": "**Increase damage by 280%**, **increase normal attack damage cap by 150%** (1 turn)"
             }
           }
         ],
