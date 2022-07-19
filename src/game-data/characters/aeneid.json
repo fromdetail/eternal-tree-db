@@ -2,20 +2,59 @@
   "skills": [
     {
       "skill": {
-        "description": "Deals **280% Earth damage** to a single enemy, inflicts **Attack Down** (-30%, last 60s). Gains **Counterattack** (2 turns)",
+        "description": "Deals **280% Earth damage** to a single enemy, inflicts **Attack Down**. Gains **Counterattack** (2 turns)",
         "name": "Heat Cut",
         "cooldown": 6,
         "upgrade": "**After strengthening:** Increase damage, inflicts 1 stack of **Bleeding**",
-        "icon": "/assets/img/skill-aeneid-1.png"
+        "icon": "/assets/img/skill-aeneid-1.png",
+        "effects": [
+          {
+            "effect": {
+              "name": "Attack Down",
+              "description": "Attack -30% (last 60s)",
+              "icon": "/assets/img/effect-attackdown.png"
+            }
+          },
+          {
+            "effect": {
+              "name": "Bleeding",
+              "icon": "/assets/img/effect-bleeding.png",
+              "description": "1500 damage per stack, debuff resist small down, max 10 stacks, last 70s"
+            }
+          },
+          {
+            "effect": {
+              "name": "Counter Attack",
+              "icon": "/assets/img/effect-counterattack.png",
+              "description": "last 2 turns"
+            }
+          }
+        ]
       }
     },
     {
       "skill": {
         "cooldown": 7,
-        "description": "**Consumes 40% own HP**. Grants all allies **Shield** (5000, until destroyed) and **Defense Up** (55%, 3 turns)",
+        "description": "**Consumes 40% own HP**. Grants all allies **Shield** and **Defense Up**",
         "name": "Stirring",
         "icon": "/assets/img/skill-aeneid-2.png.png",
-        "upgrade": "**After strengthening: Defense Up** increase to 70%"
+        "upgrade": "**After strengthening: Defense Up** increase to 70%",
+        "effects": [
+          {
+            "effect": {
+              "name": "Shield",
+              "icon": "/assets/img/effect-shield.png",
+              "description": "5000, until destroyed"
+            }
+          },
+          {
+            "effect": {
+              "name": "Defense Up",
+              "icon": "/assets/img/18px-防御上升.png",
+              "description": "**Increase defense by 55%**, last 3 turns"
+            }
+          }
+        ]
       }
     }
   ],
@@ -23,10 +62,32 @@
   "resonances": [
     {
       "resonance": {
-        "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding** (1500 damage per stack, debuff resist small down, max 10 stacks, last 70s). Grants **30% Enmity** (3 turns) to all allies.",
+        "description": "Deals **420% Earth damage** to a single enemy, inflicts 1 stack of **Bleeding**. Grants **Enmity** to all allies.",
         "name": "Abyssal Automation",
-        "upgrade": "**After strengthening:** Gain **Cover** (1 turn)",
-        "effects": [],
+        "upgrade": "**After strengthening:** Gain **Cover**",
+        "effects": [
+          {
+            "effect": {
+              "name": "Bleeding",
+              "description": "1500 damage per stack, debuff resist small down, max 10 stacks, last 70s",
+              "icon": "/assets/img/effect-bleeding.png"
+            }
+          },
+          {
+            "effect": {
+              "name": "Enmity",
+              "description": "Increase 30% enmity, last 3 turns",
+              "icon": "/assets/img/effect-enmity.png"
+            }
+          },
+          {
+            "effect": {
+              "name": "Cover",
+              "description": "When allies attacked, become enemy's attack target instead (1 turn)",
+              "icon": "/assets/img/effect-cover.png"
+            }
+          }
+        ],
         "icon": "/assets/img/burst-aeneid.png"
       }
     }
@@ -38,14 +99,14 @@
     {
       "passive": {
         "type": "Normal",
-        "description": "At the start of battle, gains **Revive**. Increase own **Hate**. When attacking enemies inflicted with **Bleeding**, increases **Enhanced Attack Rate**",
+        "description": "At the start of battle, gains **Revive**. Increase own **Hate**. When attacking enemies inflicted with **Bleeding**, increases **Enhanced Attack Rate**\\\n**Revive:** When taking lethal damage, revived with **30% max HP**",
         "name": "Unforgettable Sin"
       }
     },
     {
       "passive": {
         "type": "Normal",
-        "description": "Increases self Water Defense. If HP is less than 50%, increases defense. If HP is less than 25%, further increases defense.",
+        "description": "Increases own Water Defense. If HP is less than 50%, increases defense. If HP is less than 25%, further increases defense.",
         "name": "Secret Obsession",
         "upgrade": "**After strengthening:** If own HP is less than 50%, increase defense"
       }
