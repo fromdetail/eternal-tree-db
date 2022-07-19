@@ -9,6 +9,7 @@ eleventyComputed:
   title: "Eternal Tree Database | {{ mcClass.name }}"
 ---
 {% from 'skill.njk' import skillComponent %}
+{% from 'passive.njk' import passiveComponent %}
 <div class="container px-4 my-4 mx-auto">
 	<h1 class="text-4xl font-light text-center mb-4 md:mb-8 lg:mb-12">{{mcClass.name}}</h1>
 	<div class="flex flex-wrap md:mb-10 lg:mb-14">
@@ -96,26 +97,11 @@ eleventyComputed:
 		    {{skillComponent(skill.classSkill)}}
 			{% endfor %}
 		</section>
-		{# <section class="w-full mb-10 md:w-1/2 md:px-5 lg:w-1/3 lg:px-10">
+		<section class="w-full mb-10 md:w-1/2 md:px-5 lg:w-1/3 lg:px-10">
 			<h2 class="text-2xl font-light mb-6">Passives</h2>
-			{% for passive in character.passives %}
-			<div class="mb-6 pb-4 last:mb-0">
-				<div class="flex items-center mb-4">
-					{% if passive.passive.type == 'Normal' %}
-					<img class="w-14 h-14 mr-4" src="/assets/img/passive-normal.png" alt="">
-					{% else %}
-					<img class="w-14 h-14 mr-4" src="/assets/img/passive-synchro.png" alt="">
-					{% endif %}
-					<h3 class="text-xl">{{passive.passive.name}}</h3>
-				</div>
-				{% markdown passive.passive.description %}
-        {% if passive.passive.upgrade %}
-        <div class="italic border-t pt-2 mt-2">
-          {% markdown passive.passive.upgrade %}
-        </div>
-        {% endif %}
-			</div>
+			{% for passive in mcClass.passives %}
+			  {{passiveComponent(passive.passive)}}
 			{% endfor %}
-		</section> #}
+		</section>
 	</div>
 </div>
