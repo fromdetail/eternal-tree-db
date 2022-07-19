@@ -176,3 +176,230 @@ collections:
                 buttons: ["bold"]
                 editor_components: []
                 required: false
+  - label: "Classes"
+    name: "class"
+    identifier_field: name
+    folder: "src/game-data/classes"
+    create: true
+    extension: "json"
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Avatar", name: "avatar", widget: "image" }
+      - label: "Role"
+        name: "role"
+        widget: "select"
+        options: ["Attack", "Defense", "Special", "Support"]
+        default: "Attack"
+      - label: "Weapon types"
+        name: "weapons"
+        widget: "select"
+        multiple: true
+        options: ["Sword", "Spear", "Staff", "Bow", "Dagger", "Axe"]
+        default: "Sword"
+      - label: "Class Bonuses"
+        name: "classBonus"
+        widget: "markdown"
+        modes: ["rich_text"]
+        buttons: ["bold"]
+        editor_components: []
+      - label: "Shared Bonuses"
+        name: "sharedBonus"
+        widget: "markdown"
+        modes: ["rich_text"]
+        buttons: ["bold"]
+        editor_components: []
+      - label: "Skins"
+        name: "skins"
+        widget: "list"
+        summary: "{{fields.skin.name}}"
+        default: []
+        fields:
+          - label: "Skin"
+            name: "skin"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+      - label: "Main Skills"
+        name: "mainSkills"
+        widget: "list"
+        default: []
+        summary: "{{fields.mainSkill.name}}"
+        fields:
+          - label: "Main Skill"
+            name: "mainSkill"
+            widget: "object"
+            fields:
+              - { label: "Main Skill Name", name: "name", widget: "string" }
+              - { label: "Main Skill Icon", name: "icon", widget: "image" }
+              - {
+                  label: "Main Skill Cooldown",
+                  name: "cooldown",
+                  widget: "number",
+                  value_type: "int",
+                  min: 0,
+                  max: 100,
+                  required: false,
+                }
+              - label: "Main Skill Description"
+                name: "description"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+              - label: "Main Skill Upgrade"
+                name: "upgrade"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+                required: false
+              - label: "Main Skill Effects"
+                name: "effects"
+                widget: "list"
+                fields:
+                  - label: "Main Skill Effect"
+                    name: "effect"
+                    widget: "object"
+                    fields:
+                      - { label: "Main Skill Effect Name", name: "name", widget: "string", default: "wtf" }
+                      - label: "Main Skill Effect Description"
+                        name: "description"
+                        widget: "markdown"
+                        modes: ["rich_text"]
+                        buttons: ["bold"]
+                        editor_components: []
+                      - { label: "Main Skill Effect Icon", name: "icon", widget: "image" }
+      - label: "Common Skills"
+        name: "commonSkills"
+        widget: "list"
+        default: []
+        summary: "{{fields.commonSkill.name}}"
+        fields:
+          - label: "Common Skill"
+            name: "commonSkill"
+            widget: "object"
+            fields:
+              - { label: "Common Skill Name", name: "name", widget: "string" }
+              - { label: "Common Skill Icon", name: "icon", widget: "image" }
+              - {
+                  label: "Common Skill Cooldown",
+                  name: "cooldown",
+                  widget: "number",
+                  value_type: "int",
+                  min: 0,
+                  max: 100,
+                  required: false,
+                }
+              - label: "Common Skill Description"
+                name: "description"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+              - label: "Common Skill Upgrade"
+                name: "upgrade"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+                required: false
+              - label: "Common Skill Effects"
+                name: "effects"
+                widget: "list"
+                fields:
+                  - label: "Common Skill Effect"
+                    name: "effect"
+                    widget: "object"
+                    fields:
+                      - { label: "Common Skill Effect Name", name: "name", widget: "string", default: "wtf" }
+                      - label: "Common Skill Effect Description"
+                        name: "description"
+                        widget: "markdown"
+                        modes: ["rich_text"]
+                        buttons: ["bold"]
+                        editor_components: []
+                      - { label: "Common Skill Effect Icon", name: "icon", widget: "image" }
+      - label: "Class Limited Skills"
+        name: "classSkills"
+        widget: "list"
+        default: []
+        summary: "{{fields.classSkill.name}}"
+        fields:
+          - label: "Class Limited Skill"
+            name: "classSkill"
+            widget: "object"
+            fields:
+              - { label: "Class Limited Skill Name", name: "name", widget: "string" }
+              - { label: "Class Limited Skill Icon", name: "icon", widget: "image" }
+              - {
+                  label: "Class Limited Skill Cooldown",
+                  name: "cooldown",
+                  widget: "number",
+                  value_type: "int",
+                  min: 0,
+                  max: 100,
+                  required: false,
+                }
+              - label: "Class Limited Skill Description"
+                name: "description"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+              - label: "Class Limited Skill Upgrade"
+                name: "upgrade"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+                required: false
+              - label: "Class Limited Skill Effects"
+                name: "effects"
+                widget: "list"
+                fields:
+                  - label: "Class Limited Skill Effect"
+                    name: "effect"
+                    widget: "object"
+                    fields:
+                      - { label: "Class Limited Skill Effect Name", name: "name", widget: "string", default: "wtf" }
+                      - label: "Class Limited Skill Effect Description"
+                        name: "description"
+                        widget: "markdown"
+                        modes: ["rich_text"]
+                        buttons: ["bold"]
+                        editor_components: []
+                      - { label: "Class Limited Skill Effect Icon", name: "icon", widget: "image" }
+      - label: "Passives"
+        name: "passives"
+        widget: "list"
+        default: []
+        summary: "{{fields.passive.name}}"
+        fields:
+          - label: "Passive"
+            name: "passive"
+            widget: "object"
+            fields:
+              - { label: "Passive Name", name: "name", widget: "string" }
+              - {
+                  label: "Passive type",
+                  name: "type",
+                  widget: "select",
+                  options: ["Normal", "Synchro"],
+                  default: "Normal",
+                }
+              - label: "Passive Description"
+                name: "description"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+              - label: "Passive Upgrade"
+                name: "upgrade"
+                widget: "markdown"
+                modes: ["rich_text"]
+                buttons: ["bold"]
+                editor_components: []
+                required: false

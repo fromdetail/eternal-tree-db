@@ -1,0 +1,18 @@
+{% macro passiveComponent(passive) %}
+<div class="mb-6 pb-4 last:mb-0">
+  <div class="flex items-center mb-4">
+    {% if passive.type == 'Normal' %}
+    <img class="w-14 h-14 mr-4" src="/assets/img/passive-normal.png" alt="">
+    {% else %}
+    <img class="w-14 h-14 mr-4" src="/assets/img/passive-synchro.png" alt="">
+    {% endif %}
+    <h3 class="text-xl">{{passive.name}}</h3>
+  </div>
+  {% markdown passive.description %}
+  {% if passive.upgrade %}
+  <div class="italic border-t pt-2 mt-2">
+    {% markdown passive.upgrade %}
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}

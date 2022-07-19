@@ -1,0 +1,28 @@
+{% from "skill-effect.njk" import skillEffect %}
+
+{% macro skillComponent(skill) %} 
+<div class="mb-6 pb-4 last:mb-0">
+  <div class="flex items-center mb-4">
+    <img class="w-14 h-14 mr-4" src="{{skill.icon}}" alt="">
+    <h3 class="text-xl">{{skill.name}}</h3>
+  </div>
+  {% markdown skill.description %}
+  {% if skill.upgrade %}
+  <div class="italic border-t pt-2 mt-2">
+    {% markdown skill.upgrade %}
+  </div>
+  {% endif %}
+  {% if skill.cooldown %}
+  <p class="text-sm text-gray-500 text-right mt-2">Cooldown: {{skill.cooldown}} turns</p>
+  {% endif  %}
+  {% if skill.effects | length %}
+  <div class="ml-6 mt-4">
+    <h4 class="text-lg mb-2">Skill Effects</h4>
+    {% for effect in skill.effects %}
+      {{ skillEffect(effect.effect)}}
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+asd
