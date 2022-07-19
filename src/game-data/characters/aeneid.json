@@ -45,7 +45,7 @@
     {
       "passive": {
         "type": "Normal",
-        "description": "Increases Water Defense. If HP is less than 50%, increases defense. If HP is less than 25%, further increases defense.",
+        "description": "Increases self Water Defense. If HP is less than 50%, increases defense. If HP is less than 25%, further increases defense.",
         "name": "Secret Obsession",
         "upgrade": "If own HP is less than 50%, increase defense"
       }
