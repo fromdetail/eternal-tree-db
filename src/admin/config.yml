@@ -193,7 +193,7 @@ collections:
         options: ["Attack", "Defense", "Special", "Support"]
         default: "Attack"
       - label: "Weapon types"
-        name: "weapon"
+        name: "weapons"
         widget: "select"
         multiple: true
         options: ["Sword", "Spear", "Staff", "Bow", "Dagger", "Axe"]
