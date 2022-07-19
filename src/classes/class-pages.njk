@@ -8,7 +8,7 @@ layout: base
 eleventyComputed:
   title: "Eternal Tree Database | {{ mcClass.name }}"
 ---
-
+{% from 'skill.njk' import skillComponent %}
 <div class="container px-4 my-4 mx-auto">
 	<h1 class="text-4xl font-light text-center mb-4 md:mb-8 lg:mb-12">{{mcClass.name}}</h1>
 	<div class="flex flex-wrap md:mb-10 lg:mb-14">
@@ -77,73 +77,26 @@ eleventyComputed:
       </div>
 		</section>
 	</div>
-	{# <div class="flex flex-wrap">
-		<section class="w-full mb-10 md:w-1/2 md:px-5  lg:w-1/3 lg:px-10">
-			<h2 class="text-2xl font-light mb-6">Burst</h2>
-			{% for resonance in character.resonances %}
-			<div class="mb-6 pb-4 last:mb-0">
-				<div class="flex items-center mb-4">
-					<img class="w-14 h-14 mr-4" src="{{resonance.resonance.icon}}" alt="">
-					<h3 class="text-xl">{{resonance.resonance.name}}</h3>
-				</div>
-				<div class="">
-					{% markdown resonance.resonance.description %}
-          {% if resonance.resonance.upgrade %}
-          <div class="italic border-t pt-2 mt-2">
-            {% markdown resonance.resonance.upgrade %}
-          </div>
-          {% endif %}
-					{% if resonance.resonance.effects | length %}
-					<div class="ml-6 mt-4">
-						<h4 class="text-lg mb-2">Burst Effects</h4>
-						{% for effect in resonance.resonance.effects %}
-						<div class="mb-2 last:mb-0">
-							<div class="flex items-center mb-1">
-								<img class="w-8 h-8 mr-3" src="{{effect.effect.icon}}" alt="">
-								<h3 class="text-base">{{effect.effect.name}}</h3>
-							</div>
-							{% markdown effect.effect.description %}
-						</div>
-						{% endfor %}
-					</div>
-					{% endif %}
-				</div>
-			</div>
+	<div class="flex flex-wrap">
+		<section class="w-full mb-10 md:w-1/2 md:px-5 lg:w-1/3 lg:px-10">
+			<h2 class="text-2xl font-light mb-6">Main Skills</h2>
+			{% for skill in mcClass.mainSkills %}
+		    {{skillComponent(skill.mainSkill)}}
 			{% endfor %}
 		</section>
 		<section class="w-full mb-10 md:w-1/2 md:px-5 lg:w-1/3 lg:px-10">
-			<h2 class="text-2xl font-light mb-6">Skills</h2>
-			{% for skill in character.skills %}
-			<div class="mb-6 pb-4 last:mb-0">
-				<div class="flex items-center mb-4">
-					<img class="w-14 h-14 mr-4" src="{{skill.skill.icon}}" alt="">
-					<h3 class="text-xl">{{skill.skill.name}}</h3>
-				</div>
-				{% markdown skill.skill.description %}
-        {% if skill.skill.upgrade %}
-        <div class="italic border-t pt-2 mt-2">
-          {% markdown skill.skill.upgrade %}
-        </div>
-        {% endif %}
-				<p class="text-sm text-gray-500 text-right mt-2">Cooldown: {{skill.skill.cooldown}} turns</p>
-				{% if skill.skill.effects | length %}
-				<div class="ml-6 mt-4">
-					<h4 class="text-lg mb-2">Skill Effects</h4>
-					{% for effect in skill.skill.effects %}
-					<div class="mb-2 last:mb-0">
-						<div class="flex items-center mb-1">
-							<img class="w-8 h-8 mr-3" src="{{effect.effect.icon}}" alt="">
-							<h3 class="text-base">{{effect.effect.name}}</h3>
-						</div>
-						{% markdown effect.effect.description %}
-					</div>
-					{% endfor %}
-				</div>
-				{% endif %}
-			</div>
+			<h2 class="text-2xl font-light mb-6">Common Skills</h2>
+			{% for skill in mcClass.commonSkills %}
+		    {{skillComponent(skill.commonSkill)}}
 			{% endfor %}
 		</section>
 		<section class="w-full mb-10 md:w-1/2 md:px-5 lg:w-1/3 lg:px-10">
+			<h2 class="text-2xl font-light mb-6">Class Limited Skills</h2>
+			{% for skill in mcClass.classSkills %}
+		    {{skillComponent(skill.classSkill)}}
+			{% endfor %}
+		</section>
+		{# <section class="w-full mb-10 md:w-1/2 md:px-5 lg:w-1/3 lg:px-10">
 			<h2 class="text-2xl font-light mb-6">Passives</h2>
 			{% for passive in character.passives %}
 			<div class="mb-6 pb-4 last:mb-0">
@@ -163,6 +116,6 @@ eleventyComputed:
         {% endif %}
 			</div>
 			{% endfor %}
-		</section>
-	</div> #}
+		</section> #}
+	</div>
 </div>
